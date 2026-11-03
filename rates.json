@@ -1,0 +1,2948 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-03T20:57:19Z",
+  "sources": [
+    {
+      "name": "VATEstimator",
+      "url": "https://vatestimator.com/vat-rates",
+      "license": "free to use with attribution",
+      "updatedAt": "2026-10-08"
+    },
+    {
+      "name": "ReceiptEdit",
+      "url": "https://receiptedit.com/api/sales-tax",
+      "license": "Data by ReceiptEdit (https://receiptedit.com). Attribution required.",
+      "updatedAt": "2026-09-10"
+    },
+    {
+      "name": "VATcomply / European Commission",
+      "url": "https://api.vatcomply.com/vat_rates",
+      "license": "EU VAT rates cross-check",
+      "updatedAt": null
+    }
+  ],
+  "warnings": [],
+  "countries": [
+    {
+      "name": "Albania",
+      "code": "AL",
+      "flag": "🇦🇱",
+      "currencyCode": "ALL",
+      "currencySymbol": "L",
+      "standardRate": 20.0,
+      "reducedRates": [
+        6.0,
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 6% / 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 6.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Drejtoria e Përgjithshme e Tatimeve",
+      "sourceURL": "https://www.tatime.gov.al"
+    },
+    {
+      "name": "Argentina",
+      "code": "AR",
+      "flag": "🇦🇷",
+      "currencyCode": "ARS",
+      "currencySymbol": "$",
+      "standardRate": 21.0,
+      "reducedRates": [
+        10.5
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10.5%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 21.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 10.5,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "AFIP",
+      "sourceURL": "https://www.afip.gob.ar"
+    },
+    {
+      "name": "Australia",
+      "code": "AU",
+      "flag": "🇦🇺",
+      "currencyCode": "AUD",
+      "currencySymbol": "A$",
+      "standardRate": 10.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "GST standard rate",
+      "taxType": "GST",
+      "rateDetails": [
+        {
+          "label": "GST",
+          "rate": 10.0,
+          "taxType": "GST",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Australian Taxation Office",
+      "sourceURL": "https://www.ato.gov.au"
+    },
+    {
+      "name": "Austria",
+      "code": "AT",
+      "flag": "🇦🇹",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 20.0,
+      "reducedRates": [
+        10.0,
+        13.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10% / 13%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 13.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Bundesministerium für Finanzen",
+      "sourceURL": "https://www.bmf.gv.at"
+    },
+    {
+      "name": "Belgium",
+      "code": "BE",
+      "flag": "🇧🇪",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 21.0,
+      "reducedRates": [
+        6.0,
+        12.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 6% / 12%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 21.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 6.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "SPF Finances",
+      "sourceURL": "https://finances.belgium.be"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "code": "BA",
+      "flag": "🇧🇦",
+      "currencyCode": "BAM",
+      "currencySymbol": "KM",
+      "standardRate": 17.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 17.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Uprava za neizravno oporezivanje",
+      "sourceURL": "https://www.uino.gov.ba"
+    },
+    {
+      "name": "Brazil",
+      "code": "BR",
+      "flag": "🇧🇷",
+      "currencyCode": "BRL",
+      "currencySymbol": "R$",
+      "standardRate": 17.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "ICMS example",
+          "rate": 17.0,
+          "taxType": "VAT",
+          "role": "reference"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-10-08",
+      "sourceName": "Receita Federal do Brasil",
+      "sourceURL": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/entenda"
+    },
+    {
+      "name": "Bulgaria",
+      "code": "BG",
+      "flag": "🇧🇬",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 20.0,
+      "reducedRates": [
+        9.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 9%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 9.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-25",
+      "sourceName": "National Revenue Agency",
+      "sourceURL": "https://www.nra.bg"
+    },
+    {
+      "name": "Canada",
+      "code": "CA",
+      "flag": "🇨🇦",
+      "currencyCode": "CAD",
+      "currencySymbol": "CA$",
+      "standardRate": 5.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "Other: 13% / 14% / 15%",
+      "taxType": "GST/HST",
+      "rateDetails": [
+        {
+          "label": "GST",
+          "rate": 5.0,
+          "taxType": "GST/HST",
+          "role": "standard"
+        },
+        {
+          "label": "HST ON",
+          "rate": 13.0,
+          "taxType": "GST/HST",
+          "role": "additional"
+        },
+        {
+          "label": "HST NS",
+          "rate": 14.0,
+          "taxType": "GST/HST",
+          "role": "additional"
+        },
+        {
+          "label": "HST other participating provinces",
+          "rate": 15.0,
+          "taxType": "GST/HST",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-10-08",
+      "sourceName": "Canada Revenue Agency",
+      "sourceURL": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html"
+    },
+    {
+      "name": "Chile",
+      "code": "CL",
+      "flag": "🇨🇱",
+      "currencyCode": "CLP",
+      "currencySymbol": "$",
+      "standardRate": 19.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 19.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Servicio de Impuestos Internos",
+      "sourceURL": "https://www.sii.cl"
+    },
+    {
+      "name": "China",
+      "code": "CN",
+      "flag": "🇨🇳",
+      "currencyCode": "CNY",
+      "currencySymbol": "¥",
+      "standardRate": 13.0,
+      "reducedRates": [
+        6.0,
+        9.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 6% / 9%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 13.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 9.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 6.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "State Taxation Administration",
+      "sourceURL": "https://www.chinatax.gov.cn"
+    },
+    {
+      "name": "Colombia",
+      "code": "CO",
+      "flag": "🇨🇴",
+      "currencyCode": "COP",
+      "currencySymbol": "$",
+      "standardRate": 19.0,
+      "reducedRates": [
+        5.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 19.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "DIAN",
+      "sourceURL": "https://www.dian.gov.co"
+    },
+    {
+      "name": "Croatia",
+      "code": "HR",
+      "flag": "🇭🇷",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 25.0,
+      "reducedRates": [
+        5.0,
+        13.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 13%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 25.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 13.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Porezna uprava",
+      "sourceURL": "https://www.porezna-uprava.hr"
+    },
+    {
+      "name": "Cyprus",
+      "code": "CY",
+      "flag": "🇨🇾",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 19.0,
+      "reducedRates": [
+        5.0,
+        9.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 9%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 19.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 9.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Tax Department Cyprus",
+      "sourceURL": "https://www.mof.gov.cy/tax"
+    },
+    {
+      "name": "Czech Republic",
+      "code": "CZ",
+      "flag": "🇨🇿",
+      "currencyCode": "CZK",
+      "currencySymbol": "Kč",
+      "standardRate": 21.0,
+      "reducedRates": [
+        12.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 12%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 21.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Finanční správa",
+      "sourceURL": "https://www.financnisprava.cz"
+    },
+    {
+      "name": "Denmark",
+      "code": "DK",
+      "flag": "🇩🇰",
+      "currencyCode": "DKK",
+      "currencySymbol": "kr",
+      "standardRate": 25.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 25.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Skattestyrelsen",
+      "sourceURL": "https://www.skat.dk"
+    },
+    {
+      "name": "Egypt",
+      "code": "EG",
+      "flag": "🇪🇬",
+      "currencyCode": "EGP",
+      "currencySymbol": "E£",
+      "standardRate": 14.0,
+      "reducedRates": [
+        5.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 14.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Egyptian Tax Authority",
+      "sourceURL": "https://www.eta.gov.eg"
+    },
+    {
+      "name": "Estonia",
+      "code": "EE",
+      "flag": "🇪🇪",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 24.0,
+      "reducedRates": [
+        9.0,
+        13.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 9% / 13%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 24.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 13.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 9.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Maksu- ja Tolliamet",
+      "sourceURL": "https://www.emta.ee"
+    },
+    {
+      "name": "Finland",
+      "code": "FI",
+      "flag": "🇫🇮",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 25.5,
+      "reducedRates": [
+        10.0,
+        13.5
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10% / 13.5%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 25.5,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 13.5,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Verohallinto",
+      "sourceURL": "https://www.vero.fi"
+    },
+    {
+      "name": "France",
+      "code": "FR",
+      "flag": "🇫🇷",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 20.0,
+      "reducedRates": [
+        2.1,
+        5.5,
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 2.1% / 5.5% / 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.5,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Super-reduced",
+          "rate": 2.1,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Direction générale des Finances publiques",
+      "sourceURL": "https://www.impots.gouv.fr"
+    },
+    {
+      "name": "Germany",
+      "code": "DE",
+      "flag": "🇩🇪",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 19.0,
+      "reducedRates": [
+        7.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 7%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 19.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 7.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Bundeszentralamt für Steuern",
+      "sourceURL": "https://www.bzst.de"
+    },
+    {
+      "name": "Greece",
+      "code": "GR",
+      "flag": "🇬🇷",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 24.0,
+      "reducedRates": [
+        6.0,
+        13.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 6% / 13%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 24.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 13.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 6.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "AADE",
+      "sourceURL": "https://www.aade.gr"
+    },
+    {
+      "name": "Hungary",
+      "code": "HU",
+      "flag": "🇭🇺",
+      "currencyCode": "HUF",
+      "currencySymbol": "Ft",
+      "standardRate": 27.0,
+      "reducedRates": [
+        5.0,
+        18.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 18%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 27.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "NAV",
+      "sourceURL": "https://nav.gov.hu"
+    },
+    {
+      "name": "Iceland",
+      "code": "IS",
+      "flag": "🇮🇸",
+      "currencyCode": "ISK",
+      "currencySymbol": "kr",
+      "standardRate": 24.0,
+      "reducedRates": [
+        11.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 11%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 24.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 11.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Ríkisskattstjóri",
+      "sourceURL": "https://www.rsk.is"
+    },
+    {
+      "name": "India",
+      "code": "IN",
+      "flag": "🇮🇳",
+      "currencyCode": "INR",
+      "currencySymbol": "₹",
+      "standardRate": 18.0,
+      "reducedRates": [
+        5.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% • Other: 40%",
+      "taxType": "GST",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "GST",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "GST",
+          "role": "additional"
+        },
+        {
+          "label": "Higher",
+          "rate": 40.0,
+          "taxType": "GST",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "GST Council",
+      "sourceURL": "https://www.gst.gov.in"
+    },
+    {
+      "name": "Indonesia",
+      "code": "ID",
+      "flag": "🇮🇩",
+      "currencyCode": "IDR",
+      "currencySymbol": "Rp",
+      "standardRate": 11.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 11.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Direktorat Jenderal Pajak",
+      "sourceURL": "https://www.pajak.go.id"
+    },
+    {
+      "name": "Ireland",
+      "code": "IE",
+      "flag": "🇮🇪",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 23.0,
+      "reducedRates": [
+        4.8,
+        9.0,
+        13.5
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 4.8% / 9% / 13.5%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 23.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 13.5,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 9.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Super-reduced",
+          "rate": 4.8,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Revenue Commissioners",
+      "sourceURL": "https://www.revenue.ie"
+    },
+    {
+      "name": "Israel",
+      "code": "IL",
+      "flag": "🇮🇱",
+      "currencyCode": "ILS",
+      "currencySymbol": "₪",
+      "standardRate": 18.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Israel Tax Authority",
+      "sourceURL": "https://www.gov.il/en/departments/israel_tax_authority"
+    },
+    {
+      "name": "Italy",
+      "code": "IT",
+      "flag": "🇮🇹",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 22.0,
+      "reducedRates": [
+        4.0,
+        5.0,
+        10.0
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 4% / 5% / 10% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 22.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Super-reduced",
+          "rate": 4.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero rate",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Agenzia delle Entrate",
+      "sourceURL": "https://www.agenziaentrate.gov.it"
+    },
+    {
+      "name": "Japan",
+      "code": "JP",
+      "flag": "🇯🇵",
+      "currencyCode": "JPY",
+      "currencySymbol": "¥",
+      "standardRate": 10.0,
+      "reducedRates": [
+        8.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 8%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 8.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "National Tax Agency",
+      "sourceURL": "https://www.nta.go.jp"
+    },
+    {
+      "name": "Kenya",
+      "code": "KE",
+      "flag": "🇰🇪",
+      "currencyCode": "KES",
+      "currencySymbol": "KSh",
+      "standardRate": 16.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-10-08",
+      "sourceName": "Kenya Revenue Authority",
+      "sourceURL": "https://www.kra.go.ke/images/publications/KRA_VAT-FAQ-_reviewed-in-2024.pdf"
+    },
+    {
+      "name": "Latvia",
+      "code": "LV",
+      "flag": "🇱🇻",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 21.0,
+      "reducedRates": [
+        5.0,
+        12.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 12%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 21.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Valsts ieņēmumu dienests",
+      "sourceURL": "https://www.vid.gov.lv"
+    },
+    {
+      "name": "Liechtenstein",
+      "code": "LI",
+      "flag": "🇱🇮",
+      "currencyCode": "CHF",
+      "currencySymbol": "CHF",
+      "standardRate": 8.1,
+      "reducedRates": [
+        2.6,
+        3.8
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 2.6% / 3.8%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 8.1,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 3.8,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 2.6,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Liechtensteinische Landesverwaltung",
+      "sourceURL": "https://www.llv.li"
+    },
+    {
+      "name": "Lithuania",
+      "code": "LT",
+      "flag": "🇱🇹",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 21.0,
+      "reducedRates": [
+        5.0,
+        12.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 12%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 21.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "VMI",
+      "sourceURL": "https://www.vmi.lt"
+    },
+    {
+      "name": "Luxembourg",
+      "code": "LU",
+      "flag": "🇱🇺",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 17.0,
+      "reducedRates": [
+        3.0,
+        8.0,
+        14.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 3% / 8% / 14%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 17.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 14.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 8.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Super-reduced",
+          "rate": 3.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Administration des contributions directes",
+      "sourceURL": "https://impotsdirects.public.lu"
+    },
+    {
+      "name": "Malaysia",
+      "code": "MY",
+      "flag": "🇲🇾",
+      "currencyCode": "MYR",
+      "currencySymbol": "RM",
+      "standardRate": 8.0,
+      "reducedRates": [
+        5.0,
+        6.0
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 5% / 6% • Other: 10% • Zero: 0%",
+      "taxType": "SST",
+      "rateDetails": [
+        {
+          "label": "Service Tax general",
+          "rate": 8.0,
+          "taxType": "SST",
+          "role": "primary_calculator"
+        },
+        {
+          "label": "Service Tax specified",
+          "rate": 6.0,
+          "taxType": "SST",
+          "role": "additional"
+        },
+        {
+          "label": "Sales Tax 10%",
+          "rate": 10.0,
+          "taxType": "SST",
+          "role": "additional"
+        },
+        {
+          "label": "Sales Tax 5%",
+          "rate": 5.0,
+          "taxType": "SST",
+          "role": "additional"
+        },
+        {
+          "label": "Sales Tax exempt",
+          "rate": 0.0,
+          "taxType": "SST",
+          "role": "exempt"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": "2024-03-01",
+      "lastVerified": "2026-10-08",
+      "sourceName": "Royal Malaysian Customs Department",
+      "sourceURL": "https://mysst.customs.gov.my/background/"
+    },
+    {
+      "name": "Malta",
+      "code": "MT",
+      "flag": "🇲🇹",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 18.0,
+      "reducedRates": [
+        5.0,
+        7.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 7%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 7.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Commissioner for Revenue",
+      "sourceURL": "https://cfr.gov.mt"
+    },
+    {
+      "name": "Mexico",
+      "code": "MX",
+      "flag": "🇲🇽",
+      "currencyCode": "MXN",
+      "currencySymbol": "$",
+      "standardRate": 16.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "SAT",
+      "sourceURL": "https://www.sat.gob.mx"
+    },
+    {
+      "name": "Moldova",
+      "code": "MD",
+      "flag": "🇲🇩",
+      "currencyCode": "MDL",
+      "currencySymbol": "L",
+      "standardRate": 20.0,
+      "reducedRates": [
+        8.0,
+        12.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 8% / 12%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 8.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Serviciul Fiscal de Stat",
+      "sourceURL": "https://sfs.md"
+    },
+    {
+      "name": "Montenegro",
+      "code": "ME",
+      "flag": "🇲🇪",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 21.0,
+      "reducedRates": [
+        7.0,
+        15.0
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 7% / 15% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 21.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 7.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero rate",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-25",
+      "sourceName": "Poreska uprava Crne Gore",
+      "sourceURL": "https://www.gov.me/en/documents/a7c33b8f-aa74-4197-b1fa-317ea466161f"
+    },
+    {
+      "name": "Netherlands",
+      "code": "NL",
+      "flag": "🇳🇱",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 21.0,
+      "reducedRates": [
+        9.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 9%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 21.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 9.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Belastingdienst",
+      "sourceURL": "https://www.belastingdienst.nl"
+    },
+    {
+      "name": "New Zealand",
+      "code": "NZ",
+      "flag": "🇳🇿",
+      "currencyCode": "NZD",
+      "currencySymbol": "NZ$",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "GST standard rate",
+      "taxType": "GST",
+      "rateDetails": [
+        {
+          "label": "GST",
+          "rate": 15.0,
+          "taxType": "GST",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Inland Revenue",
+      "sourceURL": "https://www.ird.govt.nz"
+    },
+    {
+      "name": "Nigeria",
+      "code": "NG",
+      "flag": "🇳🇬",
+      "currencyCode": "NGN",
+      "currencySymbol": "₦",
+      "standardRate": 7.5,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 7.5,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Federal Inland Revenue Service",
+      "sourceURL": "https://www.firs.gov.ng"
+    },
+    {
+      "name": "North Macedonia",
+      "code": "MK",
+      "flag": "🇲🇰",
+      "currencyCode": "MKD",
+      "currencySymbol": "ден",
+      "standardRate": 18.0,
+      "reducedRates": [
+        5.0,
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Управа за јавни приходи",
+      "sourceURL": "https://www.ujp.gov.mk"
+    },
+    {
+      "name": "Norway",
+      "code": "NO",
+      "flag": "🇳🇴",
+      "currencyCode": "NOK",
+      "currencySymbol": "kr",
+      "standardRate": 25.0,
+      "reducedRates": [
+        12.0,
+        15.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 12% / 15%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 25.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Skatteetaten",
+      "sourceURL": "https://www.skatteetaten.no"
+    },
+    {
+      "name": "Philippines",
+      "code": "PH",
+      "flag": "🇵🇭",
+      "currencyCode": "PHP",
+      "currencySymbol": "₱",
+      "standardRate": 12.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Bureau of Internal Revenue",
+      "sourceURL": "https://www.bir.gov.ph"
+    },
+    {
+      "name": "Poland",
+      "code": "PL",
+      "flag": "🇵🇱",
+      "currencyCode": "PLN",
+      "currencySymbol": "zł",
+      "standardRate": 23.0,
+      "reducedRates": [
+        5.0,
+        8.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 8%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 23.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 8.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Krajowa Administracja Skarbowa",
+      "sourceURL": "https://www.podatki.gov.pl"
+    },
+    {
+      "name": "Portugal",
+      "code": "PT",
+      "flag": "🇵🇹",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 23.0,
+      "reducedRates": [
+        6.0,
+        13.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 6% / 13%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 23.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 13.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 6.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Autoridade Tributária e Aduaneira",
+      "sourceURL": "https://www.portaldasfinancas.gov.pt"
+    },
+    {
+      "name": "Romania",
+      "code": "RO",
+      "flag": "🇷🇴",
+      "currencyCode": "RON",
+      "currencySymbol": "lei",
+      "standardRate": 21.0,
+      "reducedRates": [
+        11.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 11%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 21.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 11.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "ANAF",
+      "sourceURL": "https://www.anaf.ro"
+    },
+    {
+      "name": "Russia",
+      "code": "RU",
+      "flag": "🇷🇺",
+      "currencyCode": "RUB",
+      "currencySymbol": "₽",
+      "standardRate": 22.0,
+      "reducedRates": [
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 22.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Federal Tax Service",
+      "sourceURL": "https://www.nalog.gov.ru"
+    },
+    {
+      "name": "Saudi Arabia",
+      "code": "SA",
+      "flag": "🇸🇦",
+      "currencyCode": "SAR",
+      "currencySymbol": "ر.س",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "ZATCA",
+      "sourceURL": "https://zatca.gov.sa"
+    },
+    {
+      "name": "Serbia",
+      "code": "RS",
+      "flag": "🇷🇸",
+      "currencyCode": "RSD",
+      "currencySymbol": "din",
+      "standardRate": 20.0,
+      "reducedRates": [
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-25",
+      "sourceName": "Poreska uprava Republike Srbije",
+      "sourceURL": "https://www.purs.gov.rs/lat/preduzetnici/pdv/opste-o-pdv.html"
+    },
+    {
+      "name": "Singapore",
+      "code": "SG",
+      "flag": "🇸🇬",
+      "currencyCode": "SGD",
+      "currencySymbol": "S$",
+      "standardRate": 9.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "GST standard rate",
+      "taxType": "GST",
+      "rateDetails": [
+        {
+          "label": "GST",
+          "rate": 9.0,
+          "taxType": "GST",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "IRAS",
+      "sourceURL": "https://www.iras.gov.sg"
+    },
+    {
+      "name": "Slovakia",
+      "code": "SK",
+      "flag": "🇸🇰",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 23.0,
+      "reducedRates": [
+        5.0,
+        19.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 19%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 23.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 19.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Finančná správa",
+      "sourceURL": "https://www.financnasprava.sk"
+    },
+    {
+      "name": "Slovenia",
+      "code": "SI",
+      "flag": "🇸🇮",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 22.0,
+      "reducedRates": [
+        5.0,
+        9.5
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 9.5%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 22.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 9.5,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "FURS",
+      "sourceURL": "https://www.fu.gov.si"
+    },
+    {
+      "name": "South Africa",
+      "code": "ZA",
+      "flag": "🇿🇦",
+      "currencyCode": "ZAR",
+      "currencySymbol": "R",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "SARS",
+      "sourceURL": "https://www.sars.gov.za"
+    },
+    {
+      "name": "South Korea",
+      "code": "KR",
+      "flag": "🇰🇷",
+      "currencyCode": "KRW",
+      "currencySymbol": "₩",
+      "standardRate": 10.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "National Tax Service",
+      "sourceURL": "https://www.nts.go.kr"
+    },
+    {
+      "name": "Spain",
+      "code": "ES",
+      "flag": "🇪🇸",
+      "currencyCode": "EUR",
+      "currencySymbol": "€",
+      "standardRate": 21.0,
+      "reducedRates": [
+        4.0,
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 4% / 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 21.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Super-reduced",
+          "rate": 4.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Agencia Tributaria",
+      "sourceURL": "https://www.agenciatributaria.es"
+    },
+    {
+      "name": "Sweden",
+      "code": "SE",
+      "flag": "🇸🇪",
+      "currencyCode": "SEK",
+      "currencySymbol": "kr",
+      "standardRate": 25.0,
+      "reducedRates": [
+        6.0,
+        12.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 6% / 12%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 25.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Intermediate",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 6.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Skatteverket",
+      "sourceURL": "https://www.skatteverket.se"
+    },
+    {
+      "name": "Switzerland",
+      "code": "CH",
+      "flag": "🇨🇭",
+      "currencyCode": "CHF",
+      "currencySymbol": "CHF",
+      "standardRate": 8.1,
+      "reducedRates": [
+        2.6,
+        3.8
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 2.6% / 3.8%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 8.1,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 3.8,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 2.6,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Eidgenössische Steuerverwaltung",
+      "sourceURL": "https://www.estv.admin.ch"
+    },
+    {
+      "name": "Thailand",
+      "code": "TH",
+      "flag": "🇹🇭",
+      "currencyCode": "THB",
+      "currencySymbol": "฿",
+      "standardRate": 7.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 7.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-10-08",
+      "sourceName": "Revenue Department of Thailand",
+      "sourceURL": "https://www.thaigov.go.th/th/news/166993"
+    },
+    {
+      "name": "Turkey",
+      "code": "TR",
+      "flag": "🇹🇷",
+      "currencyCode": "TRY",
+      "currencySymbol": "₺",
+      "standardRate": 20.0,
+      "reducedRates": [
+        1.0,
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 1% / 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 1.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Gelir İdaresi Başkanlığı",
+      "sourceURL": "https://www.gib.gov.tr"
+    },
+    {
+      "name": "Ukraine",
+      "code": "UA",
+      "flag": "🇺🇦",
+      "currencyCode": "UAH",
+      "currencySymbol": "₴",
+      "standardRate": 20.0,
+      "reducedRates": [
+        7.0,
+        14.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 7% / 14%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 14.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 7.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "State Tax Service of Ukraine",
+      "sourceURL": "https://tax.gov.ua"
+    },
+    {
+      "name": "United Arab Emirates",
+      "code": "AE",
+      "flag": "🇦🇪",
+      "currencyCode": "AED",
+      "currencySymbol": "د.إ",
+      "standardRate": 5.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "Federal Tax Authority",
+      "sourceURL": "https://www.tax.gov.ae"
+    },
+    {
+      "name": "United Kingdom",
+      "code": "GB",
+      "flag": "🇬🇧",
+      "currencyCode": "GBP",
+      "currencySymbol": "£",
+      "standardRate": 20.0,
+      "reducedRates": [
+        5.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-08-19",
+      "sourceName": "HMRC",
+      "sourceURL": "https://www.gov.uk/government/organisations/hm-revenue-customs"
+    },
+    {
+      "name": "United States",
+      "code": "US",
+      "flag": "🇺🇸",
+      "currencyCode": "USD",
+      "currencySymbol": "$",
+      "standardRate": 0.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "No federal VAT. Select a state to use its base sales-tax rate; local taxes vary.",
+      "taxType": "Sales Tax",
+      "rateDetails": [],
+      "regions": [
+        {
+          "code": "AL",
+          "name": "Alabama",
+          "rate": 4.0,
+          "combinedRate": 9.46,
+          "notes": "State base rate. Average combined rate: 9.46%.",
+          "sourceURL": "https://www.revenue.alabama.gov/sales-use/tax-rates/"
+        },
+        {
+          "code": "AK",
+          "name": "Alaska",
+          "rate": 0.0,
+          "combinedRate": 1.82,
+          "notes": "State base rate. Average combined rate: 1.82%.",
+          "sourceURL": "https://www.commerce.alaska.gov/web/dcra/OfficeoftheStateAssessor/AlaskaSalesTaxInformation"
+        },
+        {
+          "code": "AZ",
+          "name": "Arizona",
+          "rate": 5.6,
+          "combinedRate": 8.54,
+          "notes": "State base rate. Average combined rate: 8.54%.",
+          "sourceURL": "https://www.azdor.gov/"
+        },
+        {
+          "code": "AR",
+          "name": "Arkansas",
+          "rate": 6.5,
+          "combinedRate": 9.48,
+          "notes": "State base rate. Average combined rate: 9.48%.",
+          "sourceURL": "https://www.dfa.arkansas.gov/"
+        },
+        {
+          "code": "CA",
+          "name": "California",
+          "rate": 7.25,
+          "combinedRate": 9.03,
+          "notes": "State base rate. Average combined rate: 9.03%.",
+          "sourceURL": "https://cdtfa.ca.gov/taxes-and-fees/sales-use-tax-rates.htm"
+        },
+        {
+          "code": "CO",
+          "name": "Colorado",
+          "rate": 2.9,
+          "combinedRate": 7.89,
+          "notes": "State base rate. Average combined rate: 7.89%.",
+          "sourceURL": "https://tax.colorado.gov/sales-tax-guide"
+        },
+        {
+          "code": "CT",
+          "name": "Connecticut",
+          "rate": 6.35,
+          "combinedRate": 6.35,
+          "notes": "State base rate. Average combined rate: 6.35%.",
+          "sourceURL": "https://portal.ct.gov/DRS"
+        },
+        {
+          "code": "DE",
+          "name": "Delaware",
+          "rate": 0.0,
+          "combinedRate": 0.0,
+          "notes": "State base rate. Average combined rate: 0%.",
+          "sourceURL": "https://revenue.delaware.gov/"
+        },
+        {
+          "code": "FL",
+          "name": "Florida",
+          "rate": 6.0,
+          "combinedRate": 6.98,
+          "notes": "State base rate. Average combined rate: 6.98%.",
+          "sourceURL": "https://floridarevenue.com/"
+        },
+        {
+          "code": "GA",
+          "name": "Georgia",
+          "rate": 4.0,
+          "combinedRate": 7.56,
+          "notes": "State base rate. Average combined rate: 7.56%.",
+          "sourceURL": "https://dor.georgia.gov/"
+        },
+        {
+          "code": "HI",
+          "name": "Hawaii",
+          "rate": 4.0,
+          "combinedRate": 4.5,
+          "notes": "State base rate. Average combined rate: 4.5%.",
+          "sourceURL": "https://tax.hawaii.gov/get/"
+        },
+        {
+          "code": "ID",
+          "name": "Idaho",
+          "rate": 6.0,
+          "combinedRate": 6.03,
+          "notes": "State base rate. Average combined rate: 6.03%.",
+          "sourceURL": "https://tax.idaho.gov/"
+        },
+        {
+          "code": "IL",
+          "name": "Illinois",
+          "rate": 6.25,
+          "combinedRate": 8.98,
+          "notes": "State base rate. Average combined rate: 8.98%.",
+          "sourceURL": "https://tax.illinois.gov/research/taxrates/sales-tax-rate-machine-readable-files.html"
+        },
+        {
+          "code": "IN",
+          "name": "Indiana",
+          "rate": 7.0,
+          "combinedRate": 7.0,
+          "notes": "State base rate. Average combined rate: 7%.",
+          "sourceURL": "https://www.in.gov/dor/"
+        },
+        {
+          "code": "IA",
+          "name": "Iowa",
+          "rate": 6.0,
+          "combinedRate": 6.94,
+          "notes": "State base rate. Average combined rate: 6.94%.",
+          "sourceURL": "https://revenue.iowa.gov/"
+        },
+        {
+          "code": "KS",
+          "name": "Kansas",
+          "rate": 6.5,
+          "combinedRate": 8.71,
+          "notes": "State base rate. Average combined rate: 8.71%.",
+          "sourceURL": "https://www.ksrevenue.gov/faqs-taxsales.html"
+        },
+        {
+          "code": "KY",
+          "name": "Kentucky",
+          "rate": 6.0,
+          "combinedRate": 6.0,
+          "notes": "State base rate. Average combined rate: 6%.",
+          "sourceURL": "https://revenue.ky.gov/"
+        },
+        {
+          "code": "LA",
+          "name": "Louisiana",
+          "rate": 5.0,
+          "combinedRate": 10.13,
+          "notes": "State base rate. Average combined rate: 10.13%.",
+          "sourceURL": "https://revenue.louisiana.gov/tax-education-and-faqs/faqs/sales-tax/what-is-the-sales-tax-rate-in-louisiana/"
+        },
+        {
+          "code": "ME",
+          "name": "Maine",
+          "rate": 5.5,
+          "combinedRate": 5.5,
+          "notes": "State base rate. Average combined rate: 5.5%.",
+          "sourceURL": "https://www.maine.gov/revenue/"
+        },
+        {
+          "code": "MD",
+          "name": "Maryland",
+          "rate": 6.0,
+          "combinedRate": 6.0,
+          "notes": "State base rate. Average combined rate: 6%.",
+          "sourceURL": "https://www.marylandtaxes.gov/"
+        },
+        {
+          "code": "MA",
+          "name": "Massachusetts",
+          "rate": 6.25,
+          "combinedRate": 6.25,
+          "notes": "State base rate. Average combined rate: 6.25%.",
+          "sourceURL": "https://www.mass.gov/orgs/massachusetts-department-of-revenue"
+        },
+        {
+          "code": "MI",
+          "name": "Michigan",
+          "rate": 6.0,
+          "combinedRate": 6.0,
+          "notes": "State base rate. Average combined rate: 6%.",
+          "sourceURL": "https://www.michigan.gov/treasury"
+        },
+        {
+          "code": "MN",
+          "name": "Minnesota",
+          "rate": 6.88,
+          "combinedRate": 8.14,
+          "notes": "State base rate. Average combined rate: 8.14%.",
+          "sourceURL": "https://www.revenue.state.mn.us/guide/taxes-and-rates"
+        },
+        {
+          "code": "MS",
+          "name": "Mississippi",
+          "rate": 7.0,
+          "combinedRate": 7.06,
+          "notes": "State base rate. Average combined rate: 7.06%.",
+          "sourceURL": "https://www.dor.ms.gov/business/sales-use-tax/sales-tax-rates"
+        },
+        {
+          "code": "MO",
+          "name": "Missouri",
+          "rate": 4.22,
+          "combinedRate": 8.44,
+          "notes": "State base rate. Average combined rate: 8.44%.",
+          "sourceURL": "https://dor.mo.gov/taxation/business/tax-types/sales-use/reduction-on-food.html"
+        },
+        {
+          "code": "MT",
+          "name": "Montana",
+          "rate": 0.0,
+          "combinedRate": 0.0,
+          "notes": "State base rate. Average combined rate: 0%.",
+          "sourceURL": "https://mtrevenue.gov/"
+        },
+        {
+          "code": "NE",
+          "name": "Nebraska",
+          "rate": 5.5,
+          "combinedRate": 6.98,
+          "notes": "State base rate. Average combined rate: 6.98%.",
+          "sourceURL": "https://revenue.nebraska.gov/"
+        },
+        {
+          "code": "NV",
+          "name": "Nevada",
+          "rate": 6.85,
+          "combinedRate": 8.24,
+          "notes": "State base rate. Average combined rate: 8.24%.",
+          "sourceURL": "https://tax.nv.gov/"
+        },
+        {
+          "code": "NH",
+          "name": "New Hampshire",
+          "rate": 0.0,
+          "combinedRate": 0.0,
+          "notes": "State base rate. Average combined rate: 0%.",
+          "sourceURL": "https://revenue.nh.gov/"
+        },
+        {
+          "code": "NJ",
+          "name": "New Jersey",
+          "rate": 6.62,
+          "combinedRate": 6.6,
+          "notes": "State base rate. Average combined rate: 6.6%.",
+          "sourceURL": "https://www.nj.gov/treasury/taxation/businesses/salestax/index.shtml"
+        },
+        {
+          "code": "NM",
+          "name": "New Mexico",
+          "rate": 4.88,
+          "combinedRate": 7.68,
+          "notes": "State base rate. Average combined rate: 7.68%.",
+          "sourceURL": "https://www.tax.newmexico.gov/businesses/gross-receipts-overview/"
+        },
+        {
+          "code": "NY",
+          "name": "New York",
+          "rate": 4.0,
+          "combinedRate": 8.54,
+          "notes": "State base rate. Average combined rate: 8.54%.",
+          "sourceURL": "https://tax.ny.gov/"
+        },
+        {
+          "code": "NC",
+          "name": "North Carolina",
+          "rate": 4.75,
+          "combinedRate": 7.1,
+          "notes": "State base rate. Average combined rate: 7.1%.",
+          "sourceURL": "https://www.ncdor.gov/"
+        },
+        {
+          "code": "ND",
+          "name": "North Dakota",
+          "rate": 5.0,
+          "combinedRate": 7.09,
+          "notes": "State base rate. Average combined rate: 7.09%.",
+          "sourceURL": "https://www.nd.gov/tax/"
+        },
+        {
+          "code": "OH",
+          "name": "Ohio",
+          "rate": 5.75,
+          "combinedRate": 7.29,
+          "notes": "State base rate. Average combined rate: 7.29%.",
+          "sourceURL": "https://tax.ohio.gov/"
+        },
+        {
+          "code": "OK",
+          "name": "Oklahoma",
+          "rate": 4.5,
+          "combinedRate": 9.06,
+          "notes": "State base rate. Average combined rate: 9.06%.",
+          "sourceURL": "https://oklahoma.gov/tax/businesses/state-sales-tax-on-food-and-food-ingredients.html"
+        },
+        {
+          "code": "OR",
+          "name": "Oregon",
+          "rate": 0.0,
+          "combinedRate": 0.0,
+          "notes": "State base rate. Average combined rate: 0%.",
+          "sourceURL": "https://www.oregon.gov/DOR/Pages/index.aspx"
+        },
+        {
+          "code": "PA",
+          "name": "Pennsylvania",
+          "rate": 6.0,
+          "combinedRate": 6.34,
+          "notes": "State base rate. Average combined rate: 6.34%.",
+          "sourceURL": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax"
+        },
+        {
+          "code": "RI",
+          "name": "Rhode Island",
+          "rate": 7.0,
+          "combinedRate": 7.0,
+          "notes": "State base rate. Average combined rate: 7%.",
+          "sourceURL": "http://www.tax.ri.gov/"
+        },
+        {
+          "code": "SC",
+          "name": "South Carolina",
+          "rate": 6.0,
+          "combinedRate": 7.49,
+          "notes": "State base rate. Average combined rate: 7.49%.",
+          "sourceURL": "https://dor.sc.gov/"
+        },
+        {
+          "code": "SD",
+          "name": "South Dakota",
+          "rate": 4.2,
+          "combinedRate": 6.11,
+          "notes": "State base rate. Average combined rate: 6.11%.",
+          "sourceURL": "https://dor.sd.gov/individuals/taxes/sales-use-tax/"
+        },
+        {
+          "code": "TN",
+          "name": "Tennessee",
+          "rate": 7.0,
+          "combinedRate": 9.61,
+          "notes": "State base rate. Average combined rate: 9.61%.",
+          "sourceURL": "https://www.tn.gov/content/tn/revenue/taxes/sales-and-use-tax/due-dates-and-tax-rates.html"
+        },
+        {
+          "code": "TX",
+          "name": "Texas",
+          "rate": 6.25,
+          "combinedRate": 8.2,
+          "notes": "State base rate. Average combined rate: 8.2%.",
+          "sourceURL": "https://comptroller.texas.gov/"
+        },
+        {
+          "code": "UT",
+          "name": "Utah",
+          "rate": 6.1,
+          "combinedRate": 7.42,
+          "notes": "State base rate. Average combined rate: 7.42%.",
+          "sourceURL": "https://tax.utah.gov/business/sales-tax/sales/rates/"
+        },
+        {
+          "code": "VT",
+          "name": "Vermont",
+          "rate": 6.0,
+          "combinedRate": 6.43,
+          "notes": "State base rate. Average combined rate: 6.43%.",
+          "sourceURL": "https://tax.vermont.gov/"
+        },
+        {
+          "code": "VA",
+          "name": "Virginia",
+          "rate": 5.3,
+          "combinedRate": 5.77,
+          "notes": "State base rate. Average combined rate: 5.77%.",
+          "sourceURL": "https://www.tax.virginia.gov/retail-sales-and-use-tax"
+        },
+        {
+          "code": "WA",
+          "name": "Washington",
+          "rate": 6.5,
+          "combinedRate": 9.57,
+          "notes": "State base rate. Average combined rate: 9.57%.",
+          "sourceURL": "https://dor.wa.gov/"
+        },
+        {
+          "code": "WV",
+          "name": "West Virginia",
+          "rate": 6.0,
+          "combinedRate": 6.6,
+          "notes": "State base rate. Average combined rate: 6.6%.",
+          "sourceURL": "https://tax.wv.gov/Pages/default.aspx"
+        },
+        {
+          "code": "WI",
+          "name": "Wisconsin",
+          "rate": 5.0,
+          "combinedRate": 5.72,
+          "notes": "State base rate. Average combined rate: 5.72%.",
+          "sourceURL": "https://www.revenue.wi.gov/"
+        },
+        {
+          "code": "WY",
+          "name": "Wyoming",
+          "rate": 4.0,
+          "combinedRate": 5.39,
+          "notes": "State base rate. Average combined rate: 5.39%.",
+          "sourceURL": "http://revenue.wyo.gov/"
+        }
+      ],
+      "defaultRegionCode": "CA",
+      "regionLabel": "State",
+      "effectiveFrom": "2026-07-01",
+      "lastVerified": "2026-09-10",
+      "sourceName": "ReceiptEdit state rates",
+      "sourceURL": "https://receiptedit.com/api/sales-tax"
+    },
+    {
+      "name": "Uruguay",
+      "code": "UY",
+      "flag": "🇺🇾",
+      "currencyCode": "UYU",
+      "currencySymbol": "$",
+      "standardRate": 22.0,
+      "reducedRates": [
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 22.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-10-08",
+      "sourceName": "Dirección General Impositiva",
+      "sourceURL": "https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/son-bienes-servicios-gravados-tasa-basica-del-22"
+    },
+    {
+      "name": "Vietnam",
+      "code": "VN",
+      "flag": "🇻🇳",
+      "currencyCode": "VND",
+      "currencySymbol": "₫",
+      "standardRate": 10.0,
+      "reducedRates": [
+        5.0,
+        8.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 8%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 8.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-10-08",
+      "sourceName": "Government of Vietnam",
+      "sourceURL": "https://xaydungchinhsach.chinhphu.vn/thong-qua-nghi-quyet-cua-quoc-hoi-ve-giam-thue-gia-tri-gia-tang-119250617102022144.htm"
+    }
+  ]
+}
