@@ -2,7 +2,12 @@
 
 Automated VAT, GST, SST, and US state sales-tax data for the QuickVAT Calculator iOS app.
 
-This repository contains only generated rate data and the updater script. The app reads `rates.json` from the public raw GitHub URL or the jsDelivr fallback.
+This repository contains only generated rate data and the updater script.
+
+## Published endpoints
+
+- Raw GitHub: `https://raw.githubusercontent.com/Tumanzee/QuickVatCalculator-data/main/rates.json`
+- jsDelivr fallback: `https://cdn.jsdelivr.net/gh/Tumanzee/QuickVatCalculator-data@main/rates.json`
 
 ## Data sources
 
