@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T15:18:31Z",
+  "generatedAt": "2026-11-06T14:54:31Z",
   "sources": [
     {
       "name": "VATEstimator",
       "url": "https://vatestimator.com/vat-rates",
       "license": "free to use with attribution",
-      "updatedAt": "2026-10-08"
+      "updatedAt": "2026-11-05"
     },
     {
       "name": "ReceiptEdit",
@@ -66,6 +66,155 @@
       "sourceURL": "https://www.tatime.gov.al"
     },
     {
+      "name": "Algeria",
+      "code": "DZ",
+      "flag": "🇩🇿",
+      "currencyCode": "DZD",
+      "currencySymbol": "DZD",
+      "standardRate": 19.0,
+      "reducedRates": [
+        9.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 9%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 19.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 9.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction Générale des Impôts d’Algérie",
+      "sourceURL": "https://www.mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee"
+    },
+    {
+      "name": "Andorra",
+      "code": "AD",
+      "flag": "🇦🇩",
+      "currencyCode": "EUR",
+      "currencySymbol": "EUR",
+      "standardRate": 4.5,
+      "reducedRates": [
+        1.0,
+        2.5
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 1% / 2.5% • Other: 9.5% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 4.5,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Special: eligible categories",
+          "rate": 2.5,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 1.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        },
+        {
+          "label": "Banking and financial services",
+          "rate": 9.5,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Government of Andorra",
+      "sourceURL": "https://www.govern.ad/ca/l/4191561"
+    },
+    {
+      "name": "Angola",
+      "code": "AO",
+      "flag": "🇦🇴",
+      "currencyCode": "AOA",
+      "currencySymbol": "AOA",
+      "standardRate": 14.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 14.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Administração Geral Tributária de Angola",
+      "sourceURL": "https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-valor-acrescentado"
+    },
+    {
+      "name": "Antigua & Barbuda",
+      "code": "AG",
+      "flag": "🇦🇬",
+      "currencyCode": "XCD",
+      "currencySymbol": "XCD",
+      "standardRate": 17.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 17.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Government of Antigua and Barbuda",
+      "sourceURL": "https://ab.gov.ag/pdf/budget/2024/2024_budget_statement.pdf"
+    },
+    {
       "name": "Argentina",
       "code": "AR",
       "flag": "🇦🇷",
@@ -99,6 +248,39 @@
       "lastVerified": "2026-08-19",
       "sourceName": "AFIP",
       "sourceURL": "https://www.afip.gob.ar"
+    },
+    {
+      "name": "Armenia",
+      "code": "AM",
+      "flag": "🇦🇲",
+      "currencyCode": "AMD",
+      "currencySymbol": "AMD",
+      "standardRate": 20.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "State Revenue Committee of Armenia",
+      "sourceURL": "https://src.am/en/getNews/478"
     },
     {
       "name": "Australia",
@@ -170,6 +352,200 @@
       "sourceURL": "https://www.bmf.gv.at"
     },
     {
+      "name": "Azerbaijan",
+      "code": "AZ",
+      "flag": "🇦🇿",
+      "currencyCode": "AZN",
+      "currencySymbol": "AZN",
+      "standardRate": 18.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "State Tax Service of Azerbaijan",
+      "sourceURL": "https://taxes.gov.az/en/page/reqemsal-iqtisadiyyat-uzre-vergitutma"
+    },
+    {
+      "name": "Bahamas",
+      "code": "BS",
+      "flag": "🇧🇸",
+      "currencyCode": "BSD",
+      "currencySymbol": "BSD",
+      "standardRate": 10.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Bahamas Department of Inland Revenue",
+      "sourceURL": "https://inlandrevenue.finance.gov.bs/value-added-tax/about-vat/"
+    },
+    {
+      "name": "Bahrain",
+      "code": "BH",
+      "flag": "🇧🇭",
+      "currencyCode": "BHD",
+      "currencySymbol": "BHD",
+      "standardRate": 10.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": "2022-01-01",
+      "lastVerified": "2026-11-05",
+      "sourceName": "Bahrain National Portal / National Bureau for Revenue",
+      "sourceURL": "https://www.bahrain.bh/new/en/business-vat_en.html"
+    },
+    {
+      "name": "Bangladesh",
+      "code": "BD",
+      "flag": "🇧🇩",
+      "currencyCode": "BDT",
+      "currencySymbol": "BDT",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "National Board of Revenue of Bangladesh",
+      "sourceURL": "https://nbr.gov.bd/faq/vat-faq"
+    },
+    {
+      "name": "Barbados",
+      "code": "BB",
+      "flag": "🇧🇧",
+      "currencyCode": "BBD",
+      "currencySymbol": "BBD",
+      "standardRate": 17.5,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Other: 22% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 17.5,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Telecommunications",
+          "rate": 22.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Barbados Revenue Authority",
+      "sourceURL": "https://bra.gov.bb/Popular-Topics/Value-Added-Tax/VAT-Rates"
+    },
+    {
+      "name": "Belarus",
+      "code": "BY",
+      "flag": "🇧🇾",
+      "currencyCode": "BYN",
+      "currencySymbol": "BYN",
+      "standardRate": 20.0,
+      "reducedRates": [
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of Taxes and Duties of Belarus",
+      "sourceURL": "https://nalog.gov.by/inspectorates/reference/imns-minsk-region/clarifications/33985"
+    },
+    {
       "name": "Belgium",
       "code": "BE",
       "flag": "🇧🇪",
@@ -212,6 +588,93 @@
       "sourceURL": "https://finances.belgium.be"
     },
     {
+      "name": "Belize",
+      "code": "BZ",
+      "flag": "🇧🇿",
+      "currencyCode": "BZD",
+      "currencySymbol": "BZD",
+      "standardRate": 12.5,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "GST",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 12.5,
+          "taxType": "GST",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "GST",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Belize Tax Service Department",
+      "sourceURL": "https://bts.gov.bz/wp-content/uploads/2020/06/Chap-63-General-Sales-Tax-Act.pdf"
+    },
+    {
+      "name": "Benin",
+      "code": "BJ",
+      "flag": "🇧🇯",
+      "currencyCode": "XOF",
+      "currencySymbol": "XOF",
+      "standardRate": 18.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des Impôts du Bénin",
+      "sourceURL": "https://api.impots.bj/media/672900368cf1b_LIVRE%20BLANC%20SUR%20LA%20FISCALIT%C3%89%20B%C3%89NINOISE-2024.pdf"
+    },
+    {
+      "name": "Bhutan",
+      "code": "BT",
+      "flag": "🇧🇹",
+      "currencyCode": "BTN",
+      "currencySymbol": "BTN",
+      "standardRate": 5.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "GST standard rate",
+      "taxType": "GST",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 5.0,
+          "taxType": "GST",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": "2026-01-01",
+      "lastVerified": "2026-11-05",
+      "sourceName": "Department of Revenue and Customs of Bhutan",
+      "sourceURL": "https://www.drc.gov.bt/wp-content/uploads/2026/02/Frequently-Asked-Questions-3.pdf"
+    },
+    {
       "name": "Bosnia and Herzegovina",
       "code": "BA",
       "flag": "🇧🇦",
@@ -237,6 +700,39 @@
       "lastVerified": "2026-08-19",
       "sourceName": "Uprava za neizravno oporezivanje",
       "sourceURL": "https://www.uino.gov.ba"
+    },
+    {
+      "name": "Botswana",
+      "code": "BW",
+      "flag": "🇧🇼",
+      "currencyCode": "BWP",
+      "currencySymbol": "BWP",
+      "standardRate": 14.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 14.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Government of Botswana",
+      "sourceURL": "https://www.gov.bw/sites/default/files/2025-03/key%20features%20of%20the%202025-2026%20Budget%20Speech%20FINAL.pdf"
     },
     {
       "name": "Brazil",
@@ -301,6 +797,99 @@
       "sourceURL": "https://www.nra.bg"
     },
     {
+      "name": "Burundi",
+      "code": "BI",
+      "flag": "🇧🇮",
+      "currencyCode": "BIF",
+      "currencySymbol": "BIF",
+      "standardRate": 18.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Office Burundais des Recettes",
+      "sourceURL": "https://www.obr.bi/images/PDF/ValueAddedTaxLawinBurundi.pdf"
+    },
+    {
+      "name": "Cambodia",
+      "code": "KH",
+      "flag": "🇰🇭",
+      "currencyCode": "KHR",
+      "currencySymbol": "KHR",
+      "standardRate": 10.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "General Department of Taxation of Cambodia",
+      "sourceURL": "https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/b222ee2a-62e2-4594-b8aa-933bdd43e0f1"
+    },
+    {
+      "name": "Cameroon",
+      "code": "CM",
+      "flag": "🇨🇲",
+      "currencyCode": "XAF",
+      "currencySymbol": "XAF",
+      "standardRate": 19.25,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Combined standard total",
+          "rate": 19.25,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des Impôts du Cameroun",
+      "sourceURL": "https://impots.cm/sites/default/files/documents/FICHE%20TVA.pdf"
+    },
+    {
       "name": "Canada",
       "code": "CA",
       "flag": "🇨🇦",
@@ -344,6 +933,74 @@
       "lastVerified": "2026-10-08",
       "sourceName": "Canada Revenue Agency",
       "sourceURL": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html"
+    },
+    {
+      "name": "Cape Verde",
+      "code": "CV",
+      "flag": "🇨🇻",
+      "currencyCode": "CVE",
+      "currencySymbol": "CVE",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministério das Finanças de Cabo Verde",
+      "sourceURL": "https://www.mf.gov.cv/documents/20126/0/Medidas%2BFiscais%2BOGE%2B2022.pdf/c90dbded-54a0-0fb9-36ce-f5ceed88ad2c?t=1645016662774"
+    },
+    {
+      "name": "Central African Republic",
+      "code": "CF",
+      "flag": "🇨🇫",
+      "currencyCode": "XAF",
+      "currencySymbol": "XAF",
+      "standardRate": 19.0,
+      "reducedRates": [
+        5.0
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 5% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 19.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministère des Finances et du Budget de la République centrafricaine",
+      "sourceURL": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf"
     },
     {
       "name": "Chile",
@@ -448,6 +1105,116 @@
       "lastVerified": "2026-08-19",
       "sourceName": "DIAN",
       "sourceURL": "https://www.dian.gov.co"
+    },
+    {
+      "name": "Congo - Kinshasa",
+      "code": "CD",
+      "flag": "🇨🇩",
+      "currencyCode": "CDF",
+      "currencySymbol": "CDF",
+      "standardRate": 16.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des impôts de la RD Congo",
+      "sourceURL": "https://dgi.gouv.cd/teledeclaration/"
+    },
+    {
+      "name": "Cook Islands",
+      "code": "CK",
+      "flag": "🇨🇰",
+      "currencyCode": "NZD",
+      "currencySymbol": "NZD",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of Finance and Economic Management, Cook Islands",
+      "sourceURL": "https://www.mfem.gov.ck/_files/ugd/dbdf40_02d6ca6a6ae54d3fbd45b2d4cce2cf23.pdf"
+    },
+    {
+      "name": "Costa Rica",
+      "code": "CR",
+      "flag": "🇨🇷",
+      "currencyCode": "CRC",
+      "currencySymbol": "CRC",
+      "standardRate": 13.0,
+      "reducedRates": [
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 0.5% / 1% / 2% / 4%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "General",
+          "rate": 13.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced",
+          "rate": 4.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 2.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 1.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Eligible organic agriculture",
+          "rate": 0.5,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Procuraduría General de la República",
+      "sourceURL": "https://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=32526"
     },
     {
       "name": "Croatia",
@@ -569,6 +1336,41 @@
       "sourceURL": "https://www.financnisprava.cz"
     },
     {
+      "name": "Côte d’Ivoire",
+      "code": "CI",
+      "flag": "🇨🇮",
+      "currencyCode": "XOF",
+      "currencySymbol": "XOF",
+      "standardRate": 18.0,
+      "reducedRates": [
+        9.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 9%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 9.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des Impôts de Côte d’Ivoire",
+      "sourceURL": "https://www.fne.dgi.gouv.ci/uploads/communiques/pdf_696e12da46ae5_COMMUNIQUE_TAUX_REDUIT.pdf"
+    },
+    {
       "name": "Denmark",
       "code": "DK",
       "flag": "🇩🇰",
@@ -594,6 +1396,148 @@
       "lastVerified": "2026-08-19",
       "sourceName": "Skattestyrelsen",
       "sourceURL": "https://www.skat.dk"
+    },
+    {
+      "name": "Djibouti",
+      "code": "DJ",
+      "flag": "🇩🇯",
+      "currencyCode": "DJF",
+      "currencySymbol": "DJF",
+      "standardRate": 10.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministère du Budget de Djibouti",
+      "sourceURL": "https://budget.gouv.dj/wp-content/uploads/2022/07/CGI2016final.pdf"
+    },
+    {
+      "name": "Dominica",
+      "code": "DM",
+      "flag": "🇩🇲",
+      "currencyCode": "XCD",
+      "currencySymbol": "XCD",
+      "standardRate": 15.0,
+      "reducedRates": [
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Eligible accommodation and diving",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Inland Revenue Division of Dominica",
+      "sourceURL": "https://www.ird.gov.dm/tax-laws/value-added-tax"
+    },
+    {
+      "name": "Dominican Republic",
+      "code": "DO",
+      "flag": "🇩🇴",
+      "currencyCode": "DOP",
+      "currencySymbol": "DOP",
+      "standardRate": 18.0,
+      "reducedRates": [
+        16.0
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 16% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Selected foods",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Dirección General de Impuestos Internos",
+      "sourceURL": "https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/Itbis.aspx"
+    },
+    {
+      "name": "Ecuador",
+      "code": "EC",
+      "flag": "🇪🇨",
+      "currencyCode": "USD",
+      "currencySymbol": "USD",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Servicio de Rentas Internas del Ecuador",
+      "sourceURL": "https://www.sri.gob.ec/o/sri-portlet-biblioteca-alfresco-internet/descargar?id=a3e4257d-ba2e-4ec7-89c7-635fa764b22a&nombre=NAC-DGECCGC26-00000005.pdf"
     },
     {
       "name": "Egypt",
@@ -629,6 +1573,60 @@
       "lastVerified": "2026-08-19",
       "sourceName": "Egyptian Tax Authority",
       "sourceURL": "https://www.eta.gov.eg"
+    },
+    {
+      "name": "El Salvador",
+      "code": "SV",
+      "flag": "🇸🇻",
+      "currencyCode": "USD",
+      "currencySymbol": "USD",
+      "standardRate": 13.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 13.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministerio de Hacienda de El Salvador",
+      "sourceURL": "https://www.mh.gob.sv/servicios/mandamientos-de-ingreso-para-cancelar-el-impuesto-del-1-por-retencion-iva-a-domiciliados-y-el-13-por-iva-a-sujetos-excluidos-iva-a-terceros-no-domiciliados-e-iva-por-importacion-de-servicios-softwa/"
+    },
+    {
+      "name": "Equatorial Guinea",
+      "code": "GQ",
+      "flag": "🇬🇶",
+      "currencyCode": "XAF",
+      "currencySymbol": "XAF",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministerio de Hacienda de Guinea Ecuatorial",
+      "sourceURL": "https://minhacienda-gob.com/wp-content/uploads/2025/10/I.V.A.-DESTAJO.pdf"
     },
     {
       "name": "Estonia",
@@ -671,6 +1669,126 @@
       "lastVerified": "2026-08-19",
       "sourceName": "Maksu- ja Tolliamet",
       "sourceURL": "https://www.emta.ee"
+    },
+    {
+      "name": "Eswatini",
+      "code": "SZ",
+      "flag": "🇸🇿",
+      "currencyCode": "SZL",
+      "currencySymbol": "SZL",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Eswatini Revenue Service",
+      "sourceURL": "https://www.ers.org.sz/VAT/Eswatini"
+    },
+    {
+      "name": "Ethiopia",
+      "code": "ET",
+      "flag": "🇪🇹",
+      "currencyCode": "ETB",
+      "currencySymbol": "ETB",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ethiopian Investment Commission",
+      "sourceURL": "https://investethiopia.gov.et/faqs/"
+    },
+    {
+      "name": "Faroe Islands",
+      "code": "FO",
+      "flag": "🇫🇴",
+      "currencyCode": "DKK",
+      "currencySymbol": "DKK",
+      "standardRate": 25.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 25.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "TAKS, Faroe Islands",
+      "sourceURL": "https://www.taks.fo/en/business/vat/general-about-vat"
+    },
+    {
+      "name": "Fiji",
+      "code": "FJ",
+      "flag": "🇫🇯",
+      "currencyCode": "FJD",
+      "currencySymbol": "FJD",
+      "standardRate": 12.5,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 12.5,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": "2025-08-01",
+      "lastVerified": "2026-11-05",
+      "sourceName": "Fiji Revenue and Customs Service",
+      "sourceURL": "https://frcs.org.fj/our-services/taxation-section/non-individuals/reporting-and-paying-taxes/vat-guide/"
     },
     {
       "name": "Finland",
@@ -764,6 +1882,108 @@
       "sourceURL": "https://www.impots.gouv.fr"
     },
     {
+      "name": "French Polynesia",
+      "code": "PF",
+      "flag": "🇵🇫",
+      "currencyCode": "XPF",
+      "currencySymbol": "XPF",
+      "standardRate": 16.0,
+      "reducedRates": [
+        5.0,
+        13.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 13%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "General goods",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "General services",
+          "rate": 13.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction des impôts et des contributions publiques, Polynésie française",
+      "sourceURL": "https://www.service-public.pf/dicp/faq-items/quels-sont-les-principaux-taux-de-tva/"
+    },
+    {
+      "name": "Gambia",
+      "code": "GM",
+      "flag": "🇬🇲",
+      "currencyCode": "GMD",
+      "currencySymbol": "GMD",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Gambia Revenue Authority",
+      "sourceURL": "https://www.gra.gm/domestic-faqs"
+    },
+    {
+      "name": "Georgia",
+      "code": "GE",
+      "flag": "🇬🇪",
+      "currencyCode": "GEL",
+      "currencySymbol": "GEL",
+      "standardRate": 18.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Revenue Service of Georgia",
+      "sourceURL": "https://www.rs.ge/PersonsCustomsFAQ-en?cat=4&tab=1"
+    },
+    {
       "name": "Germany",
       "code": "DE",
       "flag": "🇩🇪",
@@ -797,6 +2017,33 @@
       "lastVerified": "2026-08-19",
       "sourceName": "Bundeszentralamt für Steuern",
       "sourceURL": "https://www.bzst.de"
+    },
+    {
+      "name": "Ghana",
+      "code": "GH",
+      "flag": "🇬🇭",
+      "currencyCode": "GHS",
+      "currencySymbol": "GHS",
+      "standardRate": 20.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Combined standard total",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": "2026-01-01",
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ghana Revenue Authority",
+      "sourceURL": "https://gra.gov.gh/news/portfolio/notice-to-all-vat-registered-taxpayers/"
     },
     {
       "name": "Greece",
@@ -839,6 +2086,214 @@
       "lastVerified": "2026-08-19",
       "sourceName": "AADE",
       "sourceURL": "https://www.aade.gr"
+    },
+    {
+      "name": "Grenada",
+      "code": "GD",
+      "flag": "🇬🇩",
+      "currencyCode": "XCD",
+      "currencySymbol": "XCD",
+      "standardRate": 15.0,
+      "reducedRates": [
+        10.0
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 10% • Other: 20% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Eligible accommodation and diving",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Mobile talk and text",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Grenada Inland Revenue Division",
+      "sourceURL": "https://update.ird.gd/taxes/value-added-tax"
+    },
+    {
+      "name": "Guadeloupe",
+      "code": "GP",
+      "flag": "🇬🇵",
+      "currencyCode": "EUR",
+      "currencySymbol": "EUR",
+      "standardRate": 8.5,
+      "reducedRates": [
+        2.1
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 2.1%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 8.5,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 2.1,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des Finances publiques, France",
+      "sourceURL": "https://www.impots.gouv.fr/professionnel/questions/quels-sont-les-differents-taux-de-tva-applicables-dans-les-dom"
+    },
+    {
+      "name": "Guatemala",
+      "code": "GT",
+      "flag": "🇬🇹",
+      "currencyCode": "GTQ",
+      "currencySymbol": "GTQ",
+      "standardRate": 12.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Superintendencia de Administración Tributaria",
+      "sourceURL": "https://en.portal.sat.gob.gt/portal/preguntas-frecuentes/principales-impuestos-guatemala/"
+    },
+    {
+      "name": "Guinea",
+      "code": "GN",
+      "flag": "🇬🇳",
+      "currencyCode": "GNF",
+      "currencySymbol": "GNF",
+      "standardRate": 18.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des impôts de Guinée",
+      "sourceURL": "https://dgi.gov.gn/wp-content/uploads/2021/04/Syst%C3%A8me-Fiscal-Guin%C3%A9en-mars-2021.pdf"
+    },
+    {
+      "name": "Guyana",
+      "code": "GY",
+      "flag": "🇬🇾",
+      "currencyCode": "GYD",
+      "currencySymbol": "GYD",
+      "standardRate": 14.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 14.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Guyana Revenue Authority",
+      "sourceURL": "https://gra.gov.gy/business/tax-operations-and-services/value-add-tax-services/how-to-calculate-vat/"
+    },
+    {
+      "name": "Honduras",
+      "code": "HN",
+      "flag": "🇭🇳",
+      "currencyCode": "HNL",
+      "currencySymbol": "HNL",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "Other: 18%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Selected alcohol and tobacco",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Servicio de Administración de Rentas",
+      "sourceURL": "https://www.sar.gob.hn/wp-content/uploads/2026/03/DECLARACION-REGIMEN-SIMPLIFICADO-DEL-IMPUESTO-SOBRE-VENTA-CODIGO-202.pdf"
     },
     {
       "name": "Hungary",
@@ -1035,6 +2490,47 @@
       "sourceURL": "https://www.revenue.ie"
     },
     {
+      "name": "Isle of Man",
+      "code": "IM",
+      "flag": "🇮🇲",
+      "currencyCode": "GBP",
+      "currencySymbol": "GBP",
+      "standardRate": 20.0,
+      "reducedRates": [
+        5.0
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 5% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Isle of Man Government",
+      "sourceURL": "https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/"
+    },
+    {
       "name": "Israel",
       "code": "IL",
       "flag": "🇮🇱",
@@ -1117,6 +2613,33 @@
       "sourceURL": "https://www.agenziaentrate.gov.it"
     },
     {
+      "name": "Jamaica",
+      "code": "JM",
+      "flag": "🇯🇲",
+      "currencyCode": "JMD",
+      "currencySymbol": "JMD",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Jamaica Information Service / Ministry of Finance",
+      "sourceURL": "https://jis.gov.jm/govt-projects-29-4b-from-new-revenue-measures-in-fiscal-year-2026-27/"
+    },
+    {
       "name": "Japan",
       "code": "JP",
       "flag": "🇯🇵",
@@ -1152,6 +2675,108 @@
       "sourceURL": "https://www.nta.go.jp"
     },
     {
+      "name": "Jersey",
+      "code": "JE",
+      "flag": "🇯🇪",
+      "currencyCode": "GBP",
+      "currencySymbol": "GBP",
+      "standardRate": 5.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "GST",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 5.0,
+          "taxType": "GST",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "GST",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Revenue Jersey",
+      "sourceURL": "https://www.gov.je/TaxesMoney/GST/Businesses/Introduction/pages/howitworks.aspx"
+    },
+    {
+      "name": "Jordan",
+      "code": "JO",
+      "flag": "🇯🇴",
+      "currencyCode": "JOD",
+      "currencySymbol": "JOD",
+      "standardRate": 16.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "GST standard rate",
+      "taxType": "GST",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 16.0,
+          "taxType": "GST",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Income and Sales Tax Department of Jordan",
+      "sourceURL": "https://istd.gov.jo/ebv4.0/root_storage/en/eb_list_page/notification_guide.pdf"
+    },
+    {
+      "name": "Kazakhstan",
+      "code": "KZ",
+      "flag": "🇰🇿",
+      "currencyCode": "KZT",
+      "currencySymbol": "KZT",
+      "standardRate": 16.0,
+      "reducedRates": [
+        5.0,
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Eligible medicines and medical services (2026)",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Domestic periodicals",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": "2026-01-01",
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of National Economy of Kazakhstan",
+      "sourceURL": "https://www.gov.kz/org/economy/press/news/details/1036878?lang=en"
+    },
+    {
       "name": "Kenya",
       "code": "KE",
       "flag": "🇰🇪",
@@ -1177,6 +2802,87 @@
       "lastVerified": "2026-10-08",
       "sourceName": "Kenya Revenue Authority",
       "sourceURL": "https://www.kra.go.ke/images/publications/KRA_VAT-FAQ-_reviewed-in-2024.pdf"
+    },
+    {
+      "name": "Kiribati",
+      "code": "KI",
+      "flag": "🇰🇮",
+      "currencyCode": "AUD",
+      "currencySymbol": "AUD",
+      "standardRate": 12.5,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 12.5,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of Finance and Economic Development of Kiribati",
+      "sourceURL": "https://mfed.gov.ki/sites/default/files/2025-05/IFMIS%20User%20Procedures%20Manual%20-%20Line%20Ministry%20Processes_V6-Oct%207.pdf"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "code": "KG",
+      "flag": "🇰🇬",
+      "currencyCode": "KGS",
+      "currencySymbol": "KGS",
+      "standardRate": 12.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "National Investment Agency of Kyrgyzstan",
+      "sourceURL": "https://invest.gov.kg/ru/invest-compass/taxes/taxation"
+    },
+    {
+      "name": "Laos",
+      "code": "LA",
+      "flag": "🇱🇦",
+      "currencyCode": "LAK",
+      "currencySymbol": "LAK",
+      "standardRate": 10.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of Finance of Lao PDR",
+      "sourceURL": "https://www.mof.gov.la/storage/document/4%20Government%20Finance%20Statistics%201st%20Semi-annual%20Report%202024.pdf"
     },
     {
       "name": "Latvia",
@@ -1219,6 +2925,74 @@
       "lastVerified": "2026-08-19",
       "sourceName": "Valsts ieņēmumu dienests",
       "sourceURL": "https://www.vid.gov.lv"
+    },
+    {
+      "name": "Lebanon",
+      "code": "LB",
+      "flag": "🇱🇧",
+      "currencyCode": "LBP",
+      "currencySymbol": "LBP",
+      "standardRate": 11.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 11.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Lebanese Customs / Ministry of Finance",
+      "sourceURL": "https://www.customs.gov.lb/exemptions/exemptions.aspx"
+    },
+    {
+      "name": "Lesotho",
+      "code": "LS",
+      "flag": "🇱🇸",
+      "currencyCode": "LSL",
+      "currencySymbol": "LSL",
+      "standardRate": 15.0,
+      "reducedRates": [
+        10.0
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 10% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Electricity",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Revenue Services Lesotho",
+      "sourceURL": "https://www.rsl.org.ls/tax-rates"
     },
     {
       "name": "Liechtenstein",
@@ -1354,6 +3128,66 @@
       "sourceURL": "https://impotsdirects.public.lu"
     },
     {
+      "name": "Madagascar",
+      "code": "MG",
+      "flag": "🇲🇬",
+      "currencyCode": "MGA",
+      "currencySymbol": "MGA",
+      "standardRate": 20.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des impôts de Madagascar",
+      "sourceURL": "https://portal.impots.mg/textes/textes/2015-12-01--N-15-Ref-M561V6-T5AYKZ.pdf"
+    },
+    {
+      "name": "Malawi",
+      "code": "MW",
+      "flag": "🇲🇼",
+      "currencyCode": "MWK",
+      "currencySymbol": "MWK",
+      "standardRate": 17.5,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 17.5,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": "2025-12-30",
+      "lastVerified": "2026-11-05",
+      "sourceName": "Malawi Revenue Authority",
+      "sourceURL": "https://www.mra.mw/admin/storage/download_files/1767182853_NEW%20TAX%20MEASURES.pdf"
+    },
+    {
       "name": "Malaysia",
       "code": "MY",
       "flag": "🇲🇾",
@@ -1408,6 +3242,74 @@
       "sourceURL": "https://mysst.customs.gov.my/background/"
     },
     {
+      "name": "Maldives",
+      "code": "MV",
+      "flag": "🇲🇻",
+      "currencyCode": "MVR",
+      "currencySymbol": "MVR",
+      "standardRate": 8.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "Other: 17%",
+      "taxType": "GST",
+      "rateDetails": [
+        {
+          "label": "General sector",
+          "rate": 8.0,
+          "taxType": "GST",
+          "role": "standard"
+        },
+        {
+          "label": "Tourism sector",
+          "rate": 17.0,
+          "taxType": "GST",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Maldives Inland Revenue Authority",
+      "sourceURL": "https://mira.gov.mv/Pages/View/gst"
+    },
+    {
+      "name": "Mali",
+      "code": "ML",
+      "flag": "🇲🇱",
+      "currencyCode": "XOF",
+      "currencySymbol": "XOF",
+      "standardRate": 18.0,
+      "reducedRates": [
+        5.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Eligible IT and solar equipment",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des Impôts du Mali",
+      "sourceURL": "https://www.dgi.gouv.ml/wp-content/uploads/2020/06/Taxe-sur-la-Valeur-N%C2%B02.pdf"
+    },
+    {
       "name": "Malta",
       "code": "MT",
       "flag": "🇲🇹",
@@ -1448,6 +3350,101 @@
       "lastVerified": "2026-08-19",
       "sourceName": "Commissioner for Revenue",
       "sourceURL": "https://cfr.gov.mt"
+    },
+    {
+      "name": "Martinique",
+      "code": "MQ",
+      "flag": "🇲🇶",
+      "currencyCode": "EUR",
+      "currencySymbol": "EUR",
+      "standardRate": 8.5,
+      "reducedRates": [
+        2.1
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 2.1%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 8.5,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 2.1,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des Finances publiques, France",
+      "sourceURL": "https://www.impots.gouv.fr/professionnel/questions/quels-sont-les-differents-taux-de-tva-applicables-dans-les-dom"
+    },
+    {
+      "name": "Mauritania",
+      "code": "MR",
+      "flag": "🇲🇷",
+      "currencyCode": "MRU",
+      "currencySymbol": "MRU",
+      "standardRate": 16.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des impôts de Mauritanie",
+      "sourceURL": "https://impots.gov.mr/DGI/files/Mauritanie-CGI-2020-francais.pdf"
+    },
+    {
+      "name": "Mauritius",
+      "code": "MU",
+      "flag": "🇲🇺",
+      "currencyCode": "MUR",
+      "currencySymbol": "MUR",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Mauritius Revenue Authority",
+      "sourceURL": "https://mra.mu/index.php/taxes-duties/overview-of-taxes"
     },
     {
       "name": "Mexico",
@@ -1519,6 +3516,81 @@
       "sourceURL": "https://sfs.md"
     },
     {
+      "name": "Monaco",
+      "code": "MC",
+      "flag": "🇲🇨",
+      "currencyCode": "EUR",
+      "currencySymbol": "EUR",
+      "standardRate": 20.0,
+      "reducedRates": [
+        5.5,
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5.5% / 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 5.5,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Gouvernement princier de Monaco",
+      "sourceURL": "https://www.gouv.mc/content/download/520750/5956145/file/20230724%20-%20Principaut%C3%A9%20de%20Monaco%20-%20Rapport%20%C3%89conomique%20-%20Accuracy%20version%20finale.pdf"
+    },
+    {
+      "name": "Mongolia",
+      "code": "MN",
+      "flag": "🇲🇳",
+      "currencyCode": "MNT",
+      "currencySymbol": "MNT",
+      "standardRate": 10.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Mongolian Tax Administration",
+      "sourceURL": "https://mta.gov.mn/files/pdf-files/7u7pzws3c5/63e311a3ce968129f232141b.pdf"
+    },
+    {
       "name": "Montenegro",
       "code": "ME",
       "flag": "🇲🇪",
@@ -1567,6 +3639,128 @@
       "sourceURL": "https://www.gov.me/en/documents/a7c33b8f-aa74-4197-b1fa-317ea466161f"
     },
     {
+      "name": "Morocco",
+      "code": "MA",
+      "flag": "🇲🇦",
+      "currencyCode": "MAD",
+      "currencySymbol": "MAD",
+      "standardRate": 20.0,
+      "reducedRates": [
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 20.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des Impôts du Maroc",
+      "sourceURL": "https://www.finances.gov.ma/Publication/dgi/2024/Note-Circulaire735LF2024.pdf"
+    },
+    {
+      "name": "Mozambique",
+      "code": "MZ",
+      "flag": "🇲🇿",
+      "currencyCode": "MZN",
+      "currencySymbol": "MZN",
+      "standardRate": 16.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministério da Economia e Finanças de Moçambique",
+      "sourceURL": "https://www.mef.gov.mz/index.php/todas-publicacoes/instrumentos-de-gestao-economica-e-social/cenario-fiscal-de-medio-prazo-cfmp/cfmp-2024-2026/1912-cfmp-2024-2026/file"
+    },
+    {
+      "name": "Namibia",
+      "code": "NA",
+      "flag": "🇳🇦",
+      "currencyCode": "NAD",
+      "currencySymbol": "NAD",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Namibia Revenue Agency",
+      "sourceURL": "https://www.itas.namra.org.na/taxes"
+    },
+    {
+      "name": "Nepal",
+      "code": "NP",
+      "flag": "🇳🇵",
+      "currencyCode": "NPR",
+      "currencySymbol": "NPR",
+      "standardRate": 13.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 13.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Inland Revenue Department of Nepal",
+      "sourceURL": "https://ird.gov.np/faq/?gid=98"
+    },
+    {
       "name": "Netherlands",
       "code": "NL",
       "flag": "🇳🇱",
@@ -1602,6 +3796,54 @@
       "sourceURL": "https://www.belastingdienst.nl"
     },
     {
+      "name": "New Caledonia",
+      "code": "NC",
+      "flag": "🇳🇨",
+      "currencyCode": "XPF",
+      "currencySymbol": "XPF",
+      "standardRate": 11.0,
+      "reducedRates": [
+        3.0,
+        6.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 3% / 6% • Other: 22%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 11.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Eligible services and categories",
+          "rate": 6.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 3.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Higher: eligible categories",
+          "rate": 22.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction des services fiscaux de Nouvelle-Calédonie",
+      "sourceURL": "https://dsf.gouv.nc/faq-tgc?categorie=526"
+    },
+    {
       "name": "New Zealand",
       "code": "NZ",
       "flag": "🇳🇿",
@@ -1629,6 +3871,81 @@
       "sourceURL": "https://www.ird.govt.nz"
     },
     {
+      "name": "Nicaragua",
+      "code": "NI",
+      "flag": "🇳🇮",
+      "currencyCode": "NIO",
+      "currencySymbol": "NIO",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Dirección General de Ingresos de Nicaragua",
+      "sourceURL": "https://www.dgi.gob.ni/FAQ/creacion__materia_imponible__h.htm"
+    },
+    {
+      "name": "Niger",
+      "code": "NE",
+      "flag": "🇳🇪",
+      "currencyCode": "XOF",
+      "currencySymbol": "XOF",
+      "standardRate": 19.0,
+      "reducedRates": [
+        5.0,
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5% / 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 19.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Defined transport and hospitality",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Goods listed in the law",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des Impôts du Niger",
+      "sourceURL": "https://www.impots.gouv.ne/media/telech/LIVRE%201%20ET%202%20ENTIER%20CGI%202025.pdf"
+    },
+    {
       "name": "Nigeria",
       "code": "NG",
       "flag": "🇳🇬",
@@ -1654,6 +3971,39 @@
       "lastVerified": "2026-08-19",
       "sourceName": "Federal Inland Revenue Service",
       "sourceURL": "https://www.firs.gov.ng"
+    },
+    {
+      "name": "Niue",
+      "code": "NU",
+      "flag": "🇳🇺",
+      "currencyCode": "NZD",
+      "currencySymbol": "NZD",
+      "standardRate": 12.5,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 12.5,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of Finance, Niue",
+      "sourceURL": "https://mof.gov.nu/wp-content/uploads/2024/04/Niue-Consumption-Tax-Act-2009.pdf"
     },
     {
       "name": "North Macedonia",
@@ -1738,6 +4088,256 @@
       "lastVerified": "2026-08-19",
       "sourceName": "Skatteetaten",
       "sourceURL": "https://www.skatteetaten.no"
+    },
+    {
+      "name": "Oman",
+      "code": "OM",
+      "flag": "🇴🇲",
+      "currencyCode": "OMR",
+      "currencySymbol": "OMR",
+      "standardRate": 5.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Oman Tax Authority",
+      "sourceURL": "https://tms.taxoman.gov.om/portal/tax-rate"
+    },
+    {
+      "name": "Pakistan",
+      "code": "PK",
+      "flag": "🇵🇰",
+      "currencyCode": "PKR",
+      "currencySymbol": "PKR",
+      "standardRate": 18.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "Sales tax varies by state. State base rate shown; local taxes may apply.",
+      "taxType": "Sales Tax",
+      "rateDetails": [
+        {
+          "label": "General goods",
+          "rate": 18.0,
+          "taxType": "Sales Tax",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Federal Board of Revenue, Pakistan",
+      "sourceURL": "https://download1.fbr.gov.pk/Docs/20232281524459451Circular01-2023SalesTaxFederalExcise.pdf"
+    },
+    {
+      "name": "Palau",
+      "code": "PW",
+      "flag": "🇵🇼",
+      "currencyCode": "USD",
+      "currencySymbol": "USD",
+      "standardRate": 10.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Palau Bureau of Revenue and Taxation",
+      "sourceURL": "https://www.palaugov.pw/executive-branch/ministries/finance/brt/pgst/"
+    },
+    {
+      "name": "Palestinian Territories",
+      "code": "PS",
+      "flag": "🇵🇸",
+      "currencyCode": "ILS",
+      "currencySymbol": "ILS",
+      "standardRate": 16.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Palestinian Investment Promotion Agency",
+      "sourceURL": "https://pipa.ps/page/id/1bc27fy1819263Y1bc27f/"
+    },
+    {
+      "name": "Panama",
+      "code": "PA",
+      "flag": "🇵🇦",
+      "currencyCode": "PAB",
+      "currencySymbol": "PAB",
+      "standardRate": 7.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "Other: 10% / 15%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 7.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Alcohol and accommodation",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Tobacco",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Dirección General de Ingresos de Panamá",
+      "sourceURL": "https://dgi.mef.gob.pa/itbms/Itbms"
+    },
+    {
+      "name": "Papua New Guinea",
+      "code": "PG",
+      "flag": "🇵🇬",
+      "currencyCode": "PGK",
+      "currencySymbol": "PGK",
+      "standardRate": 10.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "GST standard rate",
+      "taxType": "GST",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "GST",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Internal Revenue Commission of Papua New Guinea",
+      "sourceURL": "https://static.irc.gov.pg/2021/December/5ExWcL-media-GST-Section-65A-Fact-Sheet.pdf"
+    },
+    {
+      "name": "Paraguay",
+      "code": "PY",
+      "flag": "🇵🇾",
+      "currencyCode": "PYG",
+      "currencySymbol": "PYG",
+      "standardRate": 10.0,
+      "reducedRates": [
+        5.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 5%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Dirección Nacional de Ingresos Tributarios",
+      "sourceURL": "https://www.dnit.gov.py/en/web/portal-institucional/iva"
+    },
+    {
+      "name": "Peru",
+      "code": "PE",
+      "flag": "🇵🇪",
+      "currencyCode": "PEN",
+      "currencySymbol": "PEN",
+      "standardRate": 18.0,
+      "reducedRates": [
+        10.5
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10.5%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "General IGV + IPM",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Eligible MYPE (2026)",
+          "rate": 10.5,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "SUNAT",
+      "sourceURL": "https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/impuesto-general-las-ventas"
     },
     {
       "name": "Philippines",
@@ -1921,6 +4521,101 @@
       "sourceURL": "https://www.nalog.gov.ru"
     },
     {
+      "name": "Rwanda",
+      "code": "RW",
+      "flag": "🇷🇼",
+      "currencyCode": "RWF",
+      "currencySymbol": "RWF",
+      "standardRate": 18.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Rwanda Revenue Authority",
+      "sourceURL": "https://www.rra.gov.rw/fileadmin/user_upload/VAT__EN_2025.pdf"
+    },
+    {
+      "name": "Réunion",
+      "code": "RE",
+      "flag": "🇷🇪",
+      "currencyCode": "EUR",
+      "currencySymbol": "EUR",
+      "standardRate": 8.5,
+      "reducedRates": [
+        2.1
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 2.1%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 8.5,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 2.1,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des Finances publiques, France",
+      "sourceURL": "https://www.impots.gouv.fr/professionnel/questions/quels-sont-les-differents-taux-de-tva-applicables-dans-les-dom"
+    },
+    {
+      "name": "Samoa",
+      "code": "WS",
+      "flag": "🇼🇸",
+      "currencyCode": "WST",
+      "currencySymbol": "WST",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of Customs and Revenue of Samoa",
+      "sourceURL": "https://revenue.gov.ws/rates/"
+    },
+    {
       "name": "Saudi Arabia",
       "code": "SA",
       "flag": "🇸🇦",
@@ -1946,6 +4641,41 @@
       "lastVerified": "2026-08-19",
       "sourceName": "ZATCA",
       "sourceURL": "https://zatca.gov.sa"
+    },
+    {
+      "name": "Senegal",
+      "code": "SN",
+      "flag": "🇸🇳",
+      "currencyCode": "XOF",
+      "currencySymbol": "XOF",
+      "standardRate": 18.0,
+      "reducedRates": [
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Approved tourist accommodation",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direction générale des Impôts et des Domaines du Sénégal",
+      "sourceURL": "https://www.dgid.sn/entreprises"
     },
     {
       "name": "Serbia",
@@ -1981,6 +4711,72 @@
       "lastVerified": "2026-08-25",
       "sourceName": "Poreska uprava Republike Srbije",
       "sourceURL": "https://www.purs.gov.rs/lat/preduzetnici/pdv/opste-o-pdv.html"
+    },
+    {
+      "name": "Seychelles",
+      "code": "SC",
+      "flag": "🇸🇨",
+      "currencyCode": "SCR",
+      "currencySymbol": "SCR",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Seychelles Revenue Commission",
+      "sourceURL": "https://www.src.gov.sc/wp-content/uploads/2022/12/VAT-Guideline.pdf"
+    },
+    {
+      "name": "Sierra Leone",
+      "code": "SL",
+      "flag": "🇸🇱",
+      "currencyCode": "SLE",
+      "currencySymbol": "SLE",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "GST",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "GST",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "GST",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "National Revenue Authority of Sierra Leone",
+      "sourceURL": "https://nra.gov.sl/dtd/1"
     },
     {
       "name": "Singapore",
@@ -2190,6 +4986,161 @@
       "sourceURL": "https://www.agenciatributaria.es"
     },
     {
+      "name": "Sri Lanka",
+      "code": "LK",
+      "flag": "🇱🇰",
+      "currencyCode": "LKR",
+      "currencySymbol": "LKR",
+      "standardRate": 18.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": "2024-01-01",
+      "lastVerified": "2026-11-05",
+      "sourceName": "Inland Revenue Department of Sri Lanka",
+      "sourceURL": "https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Value%20Added%20Tax%20%28VAT%29.aspx"
+    },
+    {
+      "name": "St. Kitts & Nevis",
+      "code": "KN",
+      "flag": "🇰🇳",
+      "currencyCode": "XCD",
+      "currencySymbol": "XCD",
+      "standardRate": 17.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 17.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Saint Kitts and Nevis Inland Revenue Department",
+      "sourceURL": "https://www.sknird.com/articles-press-releases/"
+    },
+    {
+      "name": "St. Lucia",
+      "code": "LC",
+      "flag": "🇱🇨",
+      "currencyCode": "XCD",
+      "currencySymbol": "XCD",
+      "standardRate": 12.5,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 12.5,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Inland Revenue Department, Saint Lucia",
+      "sourceURL": "https://irdstlucia.gov.lc/images/Documents/Publications/VAT_Brochures/Filing_the_VAT_Return_Guide_2020.pdf"
+    },
+    {
+      "name": "St. Vincent & Grenadines",
+      "code": "VC",
+      "flag": "🇻🇨",
+      "currencyCode": "XCD",
+      "currencySymbol": "XCD",
+      "standardRate": 16.0,
+      "reducedRates": [
+        11.0
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 11% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Eligible accommodation",
+          "rate": 11.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Inland Revenue Department of Saint Vincent and the Grenadines",
+      "sourceURL": "https://ird.gov.vc/index.php/taxes"
+    },
+    {
+      "name": "Suriname",
+      "code": "SR",
+      "flag": "🇸🇷",
+      "currencyCode": "SRD",
+      "currencySymbol": "SRD",
+      "standardRate": 10.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Belastingdienst Suriname",
+      "sourceURL": "https://belastingdienst.sr/wp-content/uploads/2025/02/BTW-Wet.pdf"
+    },
+    {
       "name": "Sweden",
       "code": "SE",
       "flag": "🇸🇪",
@@ -2274,6 +5225,134 @@
       "sourceURL": "https://www.estv.admin.ch"
     },
     {
+      "name": "São Tomé & Príncipe",
+      "code": "ST",
+      "flag": "🇸🇹",
+      "currencyCode": "STN",
+      "currencySymbol": "STN",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Direcção dos Impostos de São Tomé e Príncipe",
+      "sourceURL": "https://impostos.financas.gov.st/phocadownload/Impostos/IVA/Manual_do_IVA_2_Edicao_Completo.pdf"
+    },
+    {
+      "name": "Taiwan",
+      "code": "TW",
+      "flag": "🇹🇼",
+      "currencyCode": "TWD",
+      "currencySymbol": "TWD",
+      "standardRate": 5.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of Finance, Taiwan",
+      "sourceURL": "https://www.etax.nat.gov.tw/etwmain/en/cbec-tax-area/business-tax/taxation-system-intro/q-and-a/Gz6MjlP"
+    },
+    {
+      "name": "Tajikistan",
+      "code": "TJ",
+      "flag": "🇹🇯",
+      "currencyCode": "TJS",
+      "currencySymbol": "TJS",
+      "standardRate": 14.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 14.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": "2024-01-01",
+      "lastVerified": "2026-11-05",
+      "sourceName": "Tax Committee of Tajikistan",
+      "sourceURL": "https://www.andoz.tj/docs/kodex/KodeksiNavTahrir2021_EN.pdf"
+    },
+    {
+      "name": "Tanzania",
+      "code": "TZ",
+      "flag": "🇹🇿",
+      "currencyCode": "TZS",
+      "currencySymbol": "TZS",
+      "standardRate": 18.0,
+      "reducedRates": [
+        16.0
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 16% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Mainland: general rate",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Eligible electronic-payment transactions",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of Finance, Tanzania",
+      "sourceURL": "https://www.mof.go.tz/uploads/documents/en-1779189357-MEDIUM%20TERM%20REVENUE%20STRATEGY%20202526%20-%20202728%20%281%29.pdf"
+    },
+    {
       "name": "Thailand",
       "code": "TH",
       "flag": "🇹🇭",
@@ -2299,6 +5378,129 @@
       "lastVerified": "2026-10-08",
       "sourceName": "Revenue Department of Thailand",
       "sourceURL": "https://www.thaigov.go.th/th/news/166993"
+    },
+    {
+      "name": "Togo",
+      "code": "TG",
+      "flag": "🇹🇬",
+      "currencyCode": "XOF",
+      "currencySymbol": "XOF",
+      "standardRate": 18.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Office Togolais des Recettes",
+      "sourceURL": "https://www.otr.tg/index.php/en/documentation/sur-les-impots/code-general-des-impots/560-cahier-fiscal-2024/file.html"
+    },
+    {
+      "name": "Tonga",
+      "code": "TO",
+      "flag": "🇹🇴",
+      "currencyCode": "TOP",
+      "currencySymbol": "TOP",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of Revenue and Customs of Tonga",
+      "sourceURL": "https://www.revenue.gov.to/index.php/consumption-tax-overview"
+    },
+    {
+      "name": "Trinidad & Tobago",
+      "code": "TT",
+      "flag": "🇹🇹",
+      "currencyCode": "TTD",
+      "currencySymbol": "TTD",
+      "standardRate": 12.5,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 12.5,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Inland Revenue Division of Trinidad and Tobago",
+      "sourceURL": "https://ird.gov.tt/vat"
+    },
+    {
+      "name": "Tunisia",
+      "code": "TN",
+      "flag": "🇹🇳",
+      "currencyCode": "TND",
+      "currencySymbol": "TND",
+      "standardRate": 19.0,
+      "reducedRates": [
+        7.0,
+        13.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 7% / 13%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 19.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 13.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 7.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministère des Finances de Tunisie",
+      "sourceURL": "https://www.jibaya.tn/wp-content/uploads/2024/02/Code-de-la-taxe-sur-la-valeur-ajoutee-2023_compressed.pdf"
     },
     {
       "name": "Turkey",
@@ -2341,6 +5543,99 @@
       "lastVerified": "2026-08-19",
       "sourceName": "Gelir İdaresi Başkanlığı",
       "sourceURL": "https://www.gib.gov.tr"
+    },
+    {
+      "name": "Turkmenistan",
+      "code": "TM",
+      "flag": "🇹🇲",
+      "currencyCode": "TMT",
+      "currencySymbol": "TMT",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of Finance and Economy of Turkmenistan",
+      "sourceURL": "https://fineconomic.gov.tm/storage/app/uploads/public/5f4/e36/335/5f4e36335969f786982476.pdf"
+    },
+    {
+      "name": "Tuvalu",
+      "code": "TV",
+      "flag": "🇹🇻",
+      "currencyCode": "AUD",
+      "currencySymbol": "AUD",
+      "standardRate": 7.0,
+      "reducedRates": [],
+      "zeroRate": false,
+      "notes": "VAT standard rate",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 7.0,
+          "taxType": "VAT",
+          "role": "standard"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Ministry of Finance, Tuvalu",
+      "sourceURL": "https://finance.gov.tv/wp-content/uploads/2022/07/Registration-Form_SoleTraderPartnership.pdf"
+    },
+    {
+      "name": "Uganda",
+      "code": "UG",
+      "flag": "🇺🇬",
+      "currencyCode": "UGX",
+      "currencySymbol": "UGX",
+      "standardRate": 18.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Uganda Revenue Authority",
+      "sourceURL": "https://ura.go.ug/en/value-added-tax-vat/?pfstyle=wp"
     },
     {
       "name": "Ukraine",
@@ -2903,6 +6198,72 @@
       "sourceURL": "https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/son-bienes-servicios-gravados-tasa-basica-del-22"
     },
     {
+      "name": "Uzbekistan",
+      "code": "UZ",
+      "flag": "🇺🇿",
+      "currencyCode": "UZS",
+      "currencySymbol": "UZS",
+      "standardRate": 12.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Tax Committee of Uzbekistan",
+      "sourceURL": "https://old.soliq.uz/storage/regulations/September2023/8abc9fad0206480aa3de8e074b538d01_05092023.pdf"
+    },
+    {
+      "name": "Vanuatu",
+      "code": "VU",
+      "flag": "🇻🇺",
+      "currencyCode": "VUV",
+      "currencySymbol": "VUV",
+      "standardRate": 15.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Vanuatu Customs and Inland Revenue",
+      "sourceURL": "https://customsinlandrevenue.gov.vu/taxes-and-licensing/taxes/value-added-tax-vat/introduction.html"
+    },
+    {
       "name": "Vietnam",
       "code": "VN",
       "flag": "🇻🇳",
@@ -2943,6 +6304,72 @@
       "lastVerified": "2026-10-08",
       "sourceName": "Government of Vietnam",
       "sourceURL": "https://xaydungchinhsach.chinhphu.vn/thong-qua-nghi-quyet-cua-quoc-hoi-ve-giam-thue-gia-tri-gia-tang-119250617102022144.htm"
+    },
+    {
+      "name": "Zambia",
+      "code": "ZM",
+      "flag": "🇿🇲",
+      "currencyCode": "ZMW",
+      "currencySymbol": "ZMW",
+      "standardRate": 16.0,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 16.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-05",
+      "sourceName": "Zambia Revenue Authority",
+      "sourceURL": "https://www.zra.org.zm/tax-information/"
+    },
+    {
+      "name": "Zimbabwe",
+      "code": "ZW",
+      "flag": "🇿🇼",
+      "currencyCode": "ZWG",
+      "currencySymbol": "ZWG",
+      "standardRate": 15.5,
+      "reducedRates": [],
+      "zeroRate": true,
+      "notes": "Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 15.5,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": "2026-01-01",
+      "lastVerified": "2026-11-05",
+      "sourceName": "Zimbabwe Revenue Authority",
+      "sourceURL": "https://www.zimra.co.zw/domestic-taxes/vat/mechanics-of-vat"
     }
   ]
 }
