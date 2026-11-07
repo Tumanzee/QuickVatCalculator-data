@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T14:54:31Z",
+  "generatedAt": "2026-11-07T13:50:47Z",
   "sources": [
     {
       "name": "VATEstimator",
       "url": "https://vatestimator.com/vat-rates",
       "license": "free to use with attribution",
-      "updatedAt": "2026-11-05"
+      "updatedAt": "2026-11-07"
     },
     {
       "name": "ReceiptEdit",
@@ -63,7 +63,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Drejtoria e Përgjithshme e Tatimeve",
-      "sourceURL": "https://www.tatime.gov.al"
+      "sourceURL": "https://tatime.gov.al/entitete/?artikull=shoqerite-tregtare"
     },
     {
       "name": "Algeria",
@@ -246,8 +246,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "AFIP",
-      "sourceURL": "https://www.afip.gob.ar"
+      "sourceName": "Government of Argentina",
+      "sourceURL": "https://www.argentina.gob.ar/normativa/nacional/decreto-280-1997-42701/actualizacion"
     },
     {
       "name": "Armenia",
@@ -307,7 +307,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Australian Taxation Office",
-      "sourceURL": "https://www.ato.gov.au"
+      "sourceURL": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/how-gst-works"
     },
     {
       "name": "Austria",
@@ -348,8 +348,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Bundesministerium für Finanzen",
-      "sourceURL": "https://www.bmf.gv.at"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Azerbaijan",
@@ -584,8 +584,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "SPF Finances",
-      "sourceURL": "https://finances.belgium.be"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Belize",
@@ -699,7 +699,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Uprava za neizravno oporezivanje",
-      "sourceURL": "https://www.uino.gov.ba"
+      "sourceURL": "https://www.uino.gov.ba/portal/en/vat/"
     },
     {
       "name": "Botswana",
@@ -793,8 +793,43 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-25",
-      "sourceName": "National Revenue Agency",
-      "sourceURL": "https://www.nra.bg"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
+    },
+    {
+      "name": "Burkina Faso",
+      "code": "BF",
+      "flag": "🇧🇫",
+      "currencyCode": "XOF",
+      "currencySymbol": "XOF",
+      "standardRate": 18.0,
+      "reducedRates": [
+        10.0
+      ],
+      "zeroRate": false,
+      "notes": "Reduced: 10%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": null,
+      "lastVerified": "2026-11-07",
+      "sourceName": "Direction générale des impôts du Burkina Faso",
+      "sourceURL": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf#page=157"
     },
     {
       "name": "Burundi",
@@ -1027,7 +1062,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Servicio de Impuestos Internos",
-      "sourceURL": "https://www.sii.cl"
+      "sourceURL": "https://www.sii.cl/preguntas_frecuentes/impuestos_mensuales/001_130_0572.htm"
     },
     {
       "name": "China",
@@ -1069,7 +1104,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "State Taxation Administration",
-      "sourceURL": "https://www.chinatax.gov.cn"
+      "sourceURL": "https://www.chinatax.gov.cn/eng/c101270/c101271/c5157953/content.html"
     },
     {
       "name": "Colombia",
@@ -1104,7 +1139,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "DIAN",
-      "sourceURL": "https://www.dian.gov.co"
+      "sourceURL": "https://normograma.dian.gov.co/dian/compilacion/docs/estatuto_tributario.htm#468"
     },
     {
       "name": "Congo - Kinshasa",
@@ -1255,8 +1290,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Porezna uprava",
-      "sourceURL": "https://www.porezna-uprava.hr"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Cyprus",
@@ -1332,8 +1367,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Finanční správa",
-      "sourceURL": "https://www.financnisprava.cz"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Côte d’Ivoire",
@@ -1394,8 +1429,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Skattestyrelsen",
-      "sourceURL": "https://www.skat.dk"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Djibouti",
@@ -1571,8 +1606,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Egyptian Tax Authority",
-      "sourceURL": "https://www.eta.gov.eg"
+      "sourceName": "State Information Service, Egypt",
+      "sourceURL": "https://sis.gov.eg/en/media-center/news/egypt-passes-vat-reform-package-to-support-industry-healthcare-and-investment/"
     },
     {
       "name": "El Salvador",
@@ -1667,8 +1702,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Maksu- ja Tolliamet",
-      "sourceURL": "https://www.emta.ee"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Eswatini",
@@ -1829,8 +1864,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Verohallinto",
-      "sourceURL": "https://www.vero.fi"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "France",
@@ -1878,8 +1913,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Direction générale des Finances publiques",
-      "sourceURL": "https://www.impots.gouv.fr"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "French Polynesia",
@@ -1922,6 +1957,54 @@
       "lastVerified": "2026-11-05",
       "sourceName": "Direction des impôts et des contributions publiques, Polynésie française",
       "sourceURL": "https://www.service-public.pf/dicp/faq-items/quels-sont-les-principaux-taux-de-tva/"
+    },
+    {
+      "name": "Gabon",
+      "code": "GA",
+      "flag": "🇬🇦",
+      "currencyCode": "XAF",
+      "currencySymbol": "XAF",
+      "standardRate": 18.0,
+      "reducedRates": [
+        5.0,
+        10.0
+      ],
+      "zeroRate": true,
+      "notes": "Reduced: 5% / 10% • Zero: 0%",
+      "taxType": "VAT",
+      "rateDetails": [
+        {
+          "label": "Standard",
+          "rate": 18.0,
+          "taxType": "VAT",
+          "role": "standard"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 10.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced: eligible categories",
+          "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero-rated: eligible supplies",
+          "rate": 0.0,
+          "taxType": "VAT",
+          "role": "zero"
+        }
+      ],
+      "regions": [],
+      "defaultRegionCode": null,
+      "regionLabel": null,
+      "effectiveFrom": "2026-01-01",
+      "lastVerified": "2026-11-07",
+      "sourceName": "Government of Gabon — Journal officiel",
+      "sourceURL": "https://gouvernement.ga/wp-content/uploads/2026/02/Journal-Officiel_n%C2%B096-Quater-du-30-decembre-2025_LOI-FIN-2026-1.pdf#page=6"
     },
     {
       "name": "Gambia",
@@ -2015,8 +2098,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Bundeszentralamt für Steuern",
-      "sourceURL": "https://www.bzst.de"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Ghana",
@@ -2084,8 +2167,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "AADE",
-      "sourceURL": "https://www.aade.gr"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Grenada",
@@ -2334,8 +2417,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "NAV",
-      "sourceURL": "https://nav.gov.hu"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Iceland",
@@ -2370,7 +2453,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Ríkisskattstjóri",
-      "sourceURL": "https://www.rsk.is"
+      "sourceURL": "https://www.skatturinn.is/fagadilar/akvardandi-bref/obeinir-skattar/akvardandi-bref-2-2025-english-version"
     },
     {
       "name": "India",
@@ -2410,8 +2493,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "GST Council",
-      "sourceURL": "https://www.gst.gov.in"
+      "sourceName": "Government of India — Ministry of Finance",
+      "sourceURL": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&lang=2&reg=3"
     },
     {
       "name": "Indonesia",
@@ -2438,7 +2521,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Direktorat Jenderal Pajak",
-      "sourceURL": "https://www.pajak.go.id"
+      "sourceURL": "https://www.pajak.go.id/en/node/114038"
     },
     {
       "name": "Ireland",
@@ -2486,8 +2569,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Revenue Commissioners",
-      "sourceURL": "https://www.revenue.ie"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Isle of Man",
@@ -2609,8 +2692,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Agenzia delle Entrate",
-      "sourceURL": "https://www.agenziaentrate.gov.it"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Jamaica",
@@ -2672,7 +2755,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "National Tax Agency",
-      "sourceURL": "https://www.nta.go.jp"
+      "sourceURL": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6303.htm"
     },
     {
       "name": "Jersey",
@@ -2923,8 +3006,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Valsts ieņēmumu dienests",
-      "sourceURL": "https://www.vid.gov.lv"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Lebanon",
@@ -3034,7 +3117,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Liechtensteinische Landesverwaltung",
-      "sourceURL": "https://www.llv.li"
+      "sourceURL": "https://www.llv.li/en/business/tax-duties-insurance/value-added-tax/vat-rates"
     },
     {
       "name": "Lithuania",
@@ -3075,8 +3158,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "VMI",
-      "sourceURL": "https://www.vmi.lt"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Luxembourg",
@@ -3124,8 +3207,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Administration des contributions directes",
-      "sourceURL": "https://impotsdirects.public.lu"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Madagascar",
@@ -3348,8 +3431,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Commissioner for Revenue",
-      "sourceURL": "https://cfr.gov.mt"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Martinique",
@@ -3471,7 +3554,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "SAT",
-      "sourceURL": "https://www.sat.gob.mx"
+      "sourceURL": "https://wwwmat.sat.gob.mx/articulo/19848/articulo-1"
     },
     {
       "name": "Moldova",
@@ -3513,7 +3596,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Serviciul Fiscal de Stat",
-      "sourceURL": "https://sfs.md"
+      "sourceURL": "https://www.sfs.md/ro/intrebare-baza-de-date-generalizare/9"
     },
     {
       "name": "Monaco",
@@ -3792,8 +3875,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Belastingdienst",
-      "sourceURL": "https://www.belastingdienst.nl"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "New Caledonia",
@@ -3868,7 +3951,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Inland Revenue",
-      "sourceURL": "https://www.ird.govt.nz"
+      "sourceURL": "https://www.ird.govt.nz/gst/charging-gst"
     },
     {
       "name": "Nicaragua",
@@ -3969,8 +4052,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Federal Inland Revenue Service",
-      "sourceURL": "https://www.firs.gov.ng"
+      "sourceName": "Federal Ministry of Finance, Nigeria",
+      "sourceURL": "https://www.finance.gov.ng/projectsnigeria"
     },
     {
       "name": "Niue",
@@ -4045,7 +4128,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Управа за јавни приходи",
-      "sourceURL": "https://www.ujp.gov.mk"
+      "sourceURL": "https://www.ujp.gov.mk/en/vodic/category/949"
     },
     {
       "name": "Norway",
@@ -4086,8 +4169,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Skatteetaten",
-      "sourceURL": "https://www.skatteetaten.no"
+      "sourceName": "Altinn — Government of Norway",
+      "sourceURL": "https://info.altinn.no/en/start-and-run-business/direct-and-indirect-taxes/indirect-taxes/value-added-tax"
     },
     {
       "name": "Oman",
@@ -4364,7 +4447,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Bureau of Internal Revenue",
-      "sourceURL": "https://www.bir.gov.ph"
+      "sourceURL": "https://bir-cdn.bir.gov.ph/BIR/pdf/BIR%20Ruling%20No.%20ITAD-035-25.pdf"
     },
     {
       "name": "Poland",
@@ -4405,8 +4488,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Krajowa Administracja Skarbowa",
-      "sourceURL": "https://www.podatki.gov.pl"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Portugal",
@@ -4447,8 +4530,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Autoridade Tributária e Aduaneira",
-      "sourceURL": "https://www.portaldasfinancas.gov.pt"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Romania",
@@ -4482,8 +4565,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "ANAF",
-      "sourceURL": "https://www.anaf.ro"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Russia",
@@ -4518,7 +4601,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Federal Tax Service",
-      "sourceURL": "https://www.nalog.gov.ru"
+      "sourceURL": "https://www.nalog.gov.ru/rn64/news/activities_fts/16595286/"
     },
     {
       "name": "Rwanda",
@@ -4640,7 +4723,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "ZATCA",
-      "sourceURL": "https://zatca.gov.sa"
+      "sourceURL": "https://www.zatca.gov.sa/en/RulesRegulations/VAT/Pages/default.aspx"
     },
     {
       "name": "Senegal",
@@ -4803,7 +4886,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "IRAS",
-      "sourceURL": "https://www.iras.gov.sg"
+      "sourceURL": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/basics-of-gst/current-gst-rates"
     },
     {
       "name": "Slovakia",
@@ -4844,8 +4927,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Finančná správa",
-      "sourceURL": "https://www.financnasprava.sk"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Slovenia",
@@ -4886,8 +4969,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "FURS",
-      "sourceURL": "https://www.fu.gov.si"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "South Africa",
@@ -4914,7 +4997,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "SARS",
-      "sourceURL": "https://www.sars.gov.za"
+      "sourceURL": "https://www.sars.gov.za/faq/what-is-vat-and-who-needs-to-register/"
     },
     {
       "name": "South Korea",
@@ -4941,7 +5024,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "National Tax Service",
-      "sourceURL": "https://www.nts.go.kr"
+      "sourceURL": "https://nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7696&mi=2275"
     },
     {
       "name": "Spain",
@@ -4982,8 +5065,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Agencia Tributaria",
-      "sourceURL": "https://www.agenciatributaria.es"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Sri Lanka",
@@ -5179,8 +5262,8 @@
       "regionLabel": null,
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
-      "sourceName": "Skatteverket",
-      "sourceURL": "https://www.skatteverket.se"
+      "sourceName": "European Commission (Your Europe)",
+      "sourceURL": "https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm"
     },
     {
       "name": "Switzerland",
@@ -5222,7 +5305,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Eidgenössische Steuerverwaltung",
-      "sourceURL": "https://www.estv.admin.ch"
+      "sourceURL": "https://www.estv.admin.ch/en/vat-rates-switzerland"
     },
     {
       "name": "São Tomé & Príncipe",
@@ -5542,7 +5625,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Gelir İdaresi Başkanlığı",
-      "sourceURL": "https://www.gib.gov.tr"
+      "sourceURL": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdv-oranlari.pdf"
     },
     {
       "name": "Turkmenistan",
@@ -5677,7 +5760,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "State Tax Service of Ukraine",
-      "sourceURL": "https://tax.gov.ua"
+      "sourceURL": "https://www.tax.gov.ua/nk/rozdil-v--podatok-na-dodanu-vartist/"
     },
     {
       "name": "United Arab Emirates",
@@ -5704,7 +5787,7 @@
       "effectiveFrom": null,
       "lastVerified": "2026-08-19",
       "sourceName": "Federal Tax Authority",
-      "sourceURL": "https://www.tax.gov.ae"
+      "sourceURL": "https://www.tax.gov.ae/en/taxes/Vat/vat.topics/what.is.vat.aspx"
     },
     {
       "name": "United Kingdom",
