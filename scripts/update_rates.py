@@ -2,7 +2,7 @@
 """Build QuickVAT's normalized tax-rate dataset.
 
 Sources:
-- VATEstimator global VAT/GST rates (67 countries)
+- VATEstimator global VAT/GST rates (174 countries)
 - ReceiptEdit US state sales-tax rates (50 states)
 - VATcomply EU standard rates (cross-check only)
 
@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -23,14 +24,53 @@ from typing import Any, Dict, Iterable, List, Optional
 
 VATE_URL = "https://vatestimator.com/api/v1/rates.json"
 US_URL = "https://receiptedit.com/api/sales-tax"
+US_FALLBACK_URL = "https://raw.githubusercontent.com/receiptedit/us-sales-tax-2026/main/us-sales-tax-2026.json"
 EU_URL = "https://api.vatcomply.com/vat_rates"
+READER_PREFIX = "https://r.jina.ai/"
 
 USER_AGENT = "QuickVAT-Rate-Updater/1.0 (+https://github.com/Tumanzee/QuickVatCalculator)"
 
-def fetch_json(url: str) -> Any:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=30) as response:
+def fetch_json(url: str, timeout: int = 30) -> Any:
+    request = urllib.request.Request(
+        url,
+        headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
         return json.load(response)
+
+
+def fetch_via_reader(url: str) -> Any:
+    payload = fetch_json(f"{READER_PREFIX}{url}", timeout=60)
+    content = payload.get("data", {}).get("content") if isinstance(payload, dict) else None
+    if not isinstance(content, str):
+        raise ValueError("Reader response did not contain JSON content")
+    return json.loads(content)
+
+
+def fetch_source(url: str, fallbacks: Iterable[str] = ()) -> Any:
+    last_error: Optional[Exception] = None
+
+    for index, source in enumerate((url, *fallbacks)):
+        if index > 0:
+            print(f"Direct fetch failed for {url}; trying fallback {source}", file=sys.stderr)
+        for attempt in range(3):
+            try:
+                return fetch_json(source)
+            except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
+                last_error = error
+                if attempt < 2:
+                    time.sleep(2 * (attempt + 1))
+        if source != url:
+            print(f"Fallback fetch failed for {source}: {last_error}", file=sys.stderr)
+
+    print(f"Direct fetch failed for {url}; trying reader fallback", file=sys.stderr)
+    for source in (url, *fallbacks):
+        try:
+            return fetch_via_reader(source)
+        except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as error:
+            last_error = error
+
+    raise RuntimeError(f"All fetch attempts failed: {last_error}") from last_error
 
 
 def utc_now() -> str:
@@ -218,11 +258,12 @@ def build_global_countries(global_payload: Dict[str, Any], eu_payload: List[Dict
 
 
 def build_us(us_payload: Dict[str, Any]) -> Dict[str, Any]:
+    metadata = us_payload.get("metadata") or {}
     regions: List[Dict[str, Any]] = []
     for state in us_payload.get("states", []):
         code = str(state.get("code", "")).upper()
-        rate = number(state.get("state_sales_tax_pct"))
-        combined = number(state.get("avg_combined_sales_tax_pct"))
+        rate = number(state.get("state_sales_tax_pct", state.get("salesTaxRate")))
+        combined = number(state.get("avg_combined_sales_tax_pct", state.get("avgCombinedTaxRate")))
         if len(code) != 2 or rate is None:
             continue
         note = f"State base rate. Average combined rate: {format_rate(combined)}." if combined is not None else "State base rate."
@@ -233,7 +274,7 @@ def build_us(us_payload: Dict[str, Any]) -> Dict[str, Any]:
                 "rate": rate,
                 "combinedRate": combined,
                 "notes": note,
-                "sourceURL": state.get("official_source"),
+                "sourceURL": state.get("official_source") or metadata.get("api"),
             }
         )
     regions.sort(key=lambda item: item["name"])
@@ -256,8 +297,8 @@ def build_us(us_payload: Dict[str, Any]) -> Dict[str, Any]:
         "regions": regions,
         "defaultRegionCode": default_region,
         "regionLabel": "State",
-        "effectiveFrom": us_payload.get("rates_as_of"),
-        "lastVerified": us_payload.get("last_updated"),
+        "effectiveFrom": us_payload.get("rates_as_of") or metadata.get("last_updated"),
+        "lastVerified": us_payload.get("last_updated") or metadata.get("last_updated"),
         "sourceName": "ReceiptEdit state rates",
         "sourceURL": US_URL,
     }
@@ -321,8 +362,8 @@ def build_dataset(global_payload: Dict[str, Any], us_payload: Dict[str, Any], eu
         {
             "name": "ReceiptEdit",
             "url": US_URL,
-            "license": us_payload.get("attribution") or "Free to use with attribution",
-            "updatedAt": us_payload.get("last_updated"),
+            "license": us_payload.get("attribution") or (us_payload.get("metadata") or {}).get("attribution") or "Free to use with attribution",
+            "updatedAt": us_payload.get("last_updated") or (us_payload.get("metadata") or {}).get("last_updated"),
         },
         {
             "name": "VATcomply / European Commission",
@@ -358,9 +399,9 @@ def main() -> int:
     args = parser.parse_args()
 
     try:
-        global_payload = fetch_json(VATE_URL)
-        us_payload = fetch_json(US_URL)
-        eu_payload = fetch_json(EU_URL)
+        global_payload = fetch_source(VATE_URL)
+        us_payload = fetch_source(US_URL, fallbacks=(US_FALLBACK_URL,))
+        eu_payload = fetch_source(EU_URL)
         dataset = build_dataset(global_payload, us_payload, eu_payload)
         dataset["warnings"].extend(compare_previous(dataset["countries"], args.previous))
         validate(dataset["countries"])
