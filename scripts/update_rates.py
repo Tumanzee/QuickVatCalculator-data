@@ -25,6 +25,7 @@ from typing import Any, Dict, Iterable, List, Optional
 VATE_URL = "https://vatestimator.com/api/v1/rates.json"
 US_URL = "https://receiptedit.com/api/sales-tax"
 US_FALLBACK_URL = "https://raw.githubusercontent.com/receiptedit/us-sales-tax-2026/main/us-sales-tax-2026.json"
+US_DOLLARCALCS_URL = "https://dollarcalcs.com/api/v1/sales-tax"
 EU_URL = "https://api.vatcomply.com/vat_rates"
 READER_PREFIX = "https://r.jina.ai/"
 
@@ -47,7 +48,7 @@ def fetch_via_reader(url: str) -> Any:
     return json.loads(content)
 
 
-def fetch_source(url: str, fallbacks: Iterable[str] = ()) -> Any:
+def fetch_source(url: str, fallbacks: Iterable[str] = ()) -> tuple[Any, str]:
     last_error: Optional[Exception] = None
 
     for index, source in enumerate((url, *fallbacks)):
@@ -55,7 +56,7 @@ def fetch_source(url: str, fallbacks: Iterable[str] = ()) -> Any:
             print(f"Direct fetch failed for {url}; trying fallback {source}", file=sys.stderr)
         for attempt in range(3):
             try:
-                return fetch_json(source)
+                return fetch_json(source), source
             except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
                 last_error = error
                 if attempt < 2:
@@ -66,7 +67,7 @@ def fetch_source(url: str, fallbacks: Iterable[str] = ()) -> Any:
     print(f"Direct fetch failed for {url}; trying reader fallback", file=sys.stderr)
     for source in (url, *fallbacks):
         try:
-            return fetch_via_reader(source)
+            return fetch_via_reader(source), source
         except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as error:
             last_error = error
 
@@ -259,12 +260,13 @@ def build_global_countries(global_payload: Dict[str, Any], eu_payload: List[Dict
 
 def build_us(us_payload: Dict[str, Any]) -> Dict[str, Any]:
     metadata = us_payload.get("metadata") or {}
+    source_url = us_payload.get("docs") or metadata.get("api") or US_URL
     regions: List[Dict[str, Any]] = []
     for state in us_payload.get("states", []):
-        code = str(state.get("code", "")).upper()
-        rate = number(state.get("state_sales_tax_pct", state.get("salesTaxRate")))
-        combined = number(state.get("avg_combined_sales_tax_pct", state.get("avgCombinedTaxRate")))
-        if len(code) != 2 or rate is None:
+        code = str(state.get("code") or state.get("abbr") or "").upper()
+        rate = number(state.get("state_sales_tax_pct", state.get("salesTaxRate", state.get("stateRate"))))
+        combined = number(state.get("avg_combined_sales_tax_pct", state.get("avgCombinedTaxRate", state.get("combined"))))
+        if len(code) != 2 or code == "DC" or rate is None:
             continue
         note = f"State base rate. Average combined rate: {format_rate(combined)}." if combined is not None else "State base rate."
         regions.append(
@@ -274,7 +276,7 @@ def build_us(us_payload: Dict[str, Any]) -> Dict[str, Any]:
                 "rate": rate,
                 "combinedRate": combined,
                 "notes": note,
-                "sourceURL": state.get("official_source") or metadata.get("api"),
+                "sourceURL": state.get("official_source") or source_url,
             }
         )
     regions.sort(key=lambda item: item["name"])
@@ -297,10 +299,10 @@ def build_us(us_payload: Dict[str, Any]) -> Dict[str, Any]:
         "regions": regions,
         "defaultRegionCode": default_region,
         "regionLabel": "State",
-        "effectiveFrom": us_payload.get("rates_as_of") or metadata.get("last_updated"),
-        "lastVerified": us_payload.get("last_updated") or metadata.get("last_updated"),
+        "effectiveFrom": us_payload.get("rates_as_of") or metadata.get("last_updated") or us_payload.get("asOf"),
+        "lastVerified": us_payload.get("last_updated") or metadata.get("last_updated") or us_payload.get("asOf"),
         "sourceName": "ReceiptEdit state rates",
-        "sourceURL": US_URL,
+        "sourceURL": source_url,
     }
 
 
@@ -345,13 +347,36 @@ def compare_previous(countries: List[Dict[str, Any]], previous_path: Optional[Pa
     return warnings
 
 
-def build_dataset(global_payload: Dict[str, Any], us_payload: Dict[str, Any], eu_payload: List[Dict[str, Any]]) -> Dict[str, Any]:
+def build_dataset(
+    global_payload: Dict[str, Any],
+    us_payload: Dict[str, Any],
+    eu_payload: List[Dict[str, Any]],
+    us_source_url: str = US_URL,
+) -> Dict[str, Any]:
     countries, warnings = build_global_countries(global_payload, eu_payload)
-    countries.append(build_us(us_payload))
+    us_country = build_us(us_payload)
+    us_country["sourceName"] = "DollarCalcs state rates" if us_source_url == US_DOLLARCALCS_URL else "ReceiptEdit state rates"
+    countries.append(us_country)
     countries.sort(key=lambda item: item["name"])
     validate(countries)
 
     global_meta = global_payload.get("meta", {})
+    us_metadata = us_payload.get("metadata") or {}
+    if us_source_url == US_DOLLARCALCS_URL:
+        us_source = {
+            "name": "DollarCalcs",
+            "url": US_DOLLARCALCS_URL,
+            "license": us_payload.get("license") or "Free to use with attribution",
+            "updatedAt": us_payload.get("asOf"),
+        }
+    else:
+        us_source = {
+            "name": "ReceiptEdit",
+            "url": US_URL,
+            "license": us_payload.get("attribution") or us_metadata.get("attribution") or "Free to use with attribution",
+            "updatedAt": us_payload.get("last_updated") or us_metadata.get("last_updated"),
+        }
+
     sources = [
         {
             "name": "VATEstimator",
@@ -359,12 +384,7 @@ def build_dataset(global_payload: Dict[str, Any], us_payload: Dict[str, Any], eu
             "license": global_meta.get("license") or "Free to use with attribution",
             "updatedAt": global_meta.get("last_updated"),
         },
-        {
-            "name": "ReceiptEdit",
-            "url": US_URL,
-            "license": us_payload.get("attribution") or (us_payload.get("metadata") or {}).get("attribution") or "Free to use with attribution",
-            "updatedAt": us_payload.get("last_updated") or (us_payload.get("metadata") or {}).get("last_updated"),
-        },
+        us_source,
         {
             "name": "VATcomply / European Commission",
             "url": EU_URL,
@@ -399,10 +419,13 @@ def main() -> int:
     args = parser.parse_args()
 
     try:
-        global_payload = fetch_source(VATE_URL)
-        us_payload = fetch_source(US_URL, fallbacks=(US_FALLBACK_URL,))
-        eu_payload = fetch_source(EU_URL)
-        dataset = build_dataset(global_payload, us_payload, eu_payload)
+        global_payload, _ = fetch_source(VATE_URL)
+        us_payload, us_source_url = fetch_source(
+            US_URL,
+            fallbacks=(US_DOLLARCALCS_URL, US_FALLBACK_URL),
+        )
+        eu_payload, _ = fetch_source(EU_URL)
+        dataset = build_dataset(global_payload, us_payload, eu_payload, us_source_url)
         dataset["warnings"].extend(compare_previous(dataset["countries"], args.previous))
         validate(dataset["countries"])
     except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as error:

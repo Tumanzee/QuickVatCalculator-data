@@ -11,8 +11,11 @@ This repository contains only generated rate data and the updater script.
 
 ## Data sources
 
+- US fallback: [DollarCalcs](https://dollarcalcs.com/developers)
+- Offline US fallback: [ReceiptEdit 2026 GitHub dataset](https://github.com/receiptedit/us-sales-tax-2026)
+
 - Global VAT/GST rates (174): [VATEstimator](https://vatestimator.com/vat-rates)
-- US state sales-tax rates: [ReceiptEdit](https://receiptedit.com/api/sales-tax) (API; GitHub dataset fallback)
+- US state sales-tax rates: [ReceiptEdit](https://receiptedit.com/api/sales-tax) (API; DollarCalcs and GitHub dataset fallbacks)
 - EU cross-check: [VATcomply](https://api.vatcomply.com/vat_rates) / European Commission
 
 Rates are for reference only and may change. Verify with the local tax authority before filing.
