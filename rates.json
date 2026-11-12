@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T20:54:15Z",
+  "generatedAt": "2026-11-12T20:57:44Z",
   "sources": [
     {
       "name": "VATEstimator",
@@ -9,10 +9,10 @@
       "updatedAt": "2026-11-07"
     },
     {
-      "name": "ReceiptEdit",
-      "url": "https://receiptedit.com/api/sales-tax",
-      "license": "Compiled by ReceiptEdit (https://receiptedit.com). Please credit when used.",
-      "updatedAt": "2026-06-17"
+      "name": "DollarCalcs",
+      "url": "https://dollarcalcs.com/api/v1/sales-tax",
+      "license": "Free to use with attribution and a link to https://dollarcalcs.com",
+      "updatedAt": "2026-07-01"
     },
     {
       "name": "VATcomply / European Commission",
@@ -5841,9 +5841,9 @@
           "code": "AL",
           "name": "Alabama",
           "rate": 4.0,
-          "combinedRate": 9.29,
-          "notes": "State base rate. Average combined rate: 9.29%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 9.46,
+          "notes": "State base rate. Average combined rate: 9.46%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "AK",
@@ -5851,39 +5851,39 @@
           "rate": 0.0,
           "combinedRate": 1.82,
           "notes": "State base rate. Average combined rate: 1.82%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "AZ",
           "name": "Arizona",
           "rate": 5.6,
-          "combinedRate": 8.37,
-          "notes": "State base rate. Average combined rate: 8.37%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 8.54,
+          "notes": "State base rate. Average combined rate: 8.54%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "AR",
           "name": "Arkansas",
           "rate": 6.5,
-          "combinedRate": 9.45,
-          "notes": "State base rate. Average combined rate: 9.45%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 9.48,
+          "notes": "State base rate. Average combined rate: 9.48%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "CA",
           "name": "California",
           "rate": 7.25,
-          "combinedRate": 8.85,
-          "notes": "State base rate. Average combined rate: 8.85%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 9.03,
+          "notes": "State base rate. Average combined rate: 9.03%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "CO",
           "name": "Colorado",
           "rate": 2.9,
-          "combinedRate": 7.81,
-          "notes": "State base rate. Average combined rate: 7.81%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 7.89,
+          "notes": "State base rate. Average combined rate: 7.89%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "CT",
@@ -5891,7 +5891,7 @@
           "rate": 6.35,
           "combinedRate": 6.35,
           "notes": "State base rate. Average combined rate: 6.35%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "DE",
@@ -5899,23 +5899,23 @@
           "rate": 0.0,
           "combinedRate": 0.0,
           "notes": "State base rate. Average combined rate: 0%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "FL",
           "name": "Florida",
           "rate": 6.0,
-          "combinedRate": 7.0,
-          "notes": "State base rate. Average combined rate: 7%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 6.98,
+          "notes": "State base rate. Average combined rate: 6.98%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "GA",
           "name": "Georgia",
           "rate": 4.0,
-          "combinedRate": 7.38,
-          "notes": "State base rate. Average combined rate: 7.38%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 7.56,
+          "notes": "State base rate. Average combined rate: 7.56%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "HI",
@@ -5923,23 +5923,23 @@
           "rate": 4.0,
           "combinedRate": 4.5,
           "notes": "State base rate. Average combined rate: 4.5%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "ID",
           "name": "Idaho",
           "rate": 6.0,
-          "combinedRate": 6.02,
-          "notes": "State base rate. Average combined rate: 6.02%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 6.03,
+          "notes": "State base rate. Average combined rate: 6.03%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "IL",
           "name": "Illinois",
           "rate": 6.25,
-          "combinedRate": 8.85,
-          "notes": "State base rate. Average combined rate: 8.85%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 8.98,
+          "notes": "State base rate. Average combined rate: 8.98%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "IN",
@@ -5947,7 +5947,7 @@
           "rate": 7.0,
           "combinedRate": 7.0,
           "notes": "State base rate. Average combined rate: 7%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "IA",
@@ -5955,15 +5955,15 @@
           "rate": 6.0,
           "combinedRate": 6.94,
           "notes": "State base rate. Average combined rate: 6.94%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "KS",
           "name": "Kansas",
           "rate": 6.5,
-          "combinedRate": 8.66,
-          "notes": "State base rate. Average combined rate: 8.66%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 8.71,
+          "notes": "State base rate. Average combined rate: 8.71%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "KY",
@@ -5971,15 +5971,15 @@
           "rate": 6.0,
           "combinedRate": 6.0,
           "notes": "State base rate. Average combined rate: 6%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "LA",
           "name": "Louisiana",
-          "rate": 4.45,
-          "combinedRate": 9.55,
-          "notes": "State base rate. Average combined rate: 9.55%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "rate": 5.0,
+          "combinedRate": 10.13,
+          "notes": "State base rate. Average combined rate: 10.13%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "ME",
@@ -5987,7 +5987,7 @@
           "rate": 5.5,
           "combinedRate": 5.5,
           "notes": "State base rate. Average combined rate: 5.5%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "MD",
@@ -5995,7 +5995,7 @@
           "rate": 6.0,
           "combinedRate": 6.0,
           "notes": "State base rate. Average combined rate: 6%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "MA",
@@ -6003,7 +6003,7 @@
           "rate": 6.25,
           "combinedRate": 6.25,
           "notes": "State base rate. Average combined rate: 6.25%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "MI",
@@ -6011,31 +6011,31 @@
           "rate": 6.0,
           "combinedRate": 6.0,
           "notes": "State base rate. Average combined rate: 6%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "MN",
           "name": "Minnesota",
           "rate": 6.88,
-          "combinedRate": 7.5,
-          "notes": "State base rate. Average combined rate: 7.5%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 8.14,
+          "notes": "State base rate. Average combined rate: 8.14%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "MS",
           "name": "Mississippi",
           "rate": 7.0,
-          "combinedRate": 7.07,
-          "notes": "State base rate. Average combined rate: 7.07%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 7.06,
+          "notes": "State base rate. Average combined rate: 7.06%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "MO",
           "name": "Missouri",
           "rate": 4.22,
-          "combinedRate": 8.39,
-          "notes": "State base rate. Average combined rate: 8.39%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 8.44,
+          "notes": "State base rate. Average combined rate: 8.44%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "MT",
@@ -6043,15 +6043,15 @@
           "rate": 0.0,
           "combinedRate": 0.0,
           "notes": "State base rate. Average combined rate: 0%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "NE",
           "name": "Nebraska",
           "rate": 5.5,
-          "combinedRate": 6.94,
-          "notes": "State base rate. Average combined rate: 6.94%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 6.98,
+          "notes": "State base rate. Average combined rate: 6.98%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "NV",
@@ -6059,7 +6059,7 @@
           "rate": 6.85,
           "combinedRate": 8.24,
           "notes": "State base rate. Average combined rate: 8.24%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "NH",
@@ -6067,7 +6067,7 @@
           "rate": 0.0,
           "combinedRate": 0.0,
           "notes": "State base rate. Average combined rate: 0%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "NJ",
@@ -6075,55 +6075,55 @@
           "rate": 6.62,
           "combinedRate": 6.6,
           "notes": "State base rate. Average combined rate: 6.6%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "NM",
           "name": "New Mexico",
           "rate": 4.88,
-          "combinedRate": 7.62,
-          "notes": "State base rate. Average combined rate: 7.62%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 7.68,
+          "notes": "State base rate. Average combined rate: 7.68%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "NY",
           "name": "New York",
           "rate": 4.0,
-          "combinedRate": 8.53,
-          "notes": "State base rate. Average combined rate: 8.53%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 8.54,
+          "notes": "State base rate. Average combined rate: 8.54%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "NC",
           "name": "North Carolina",
           "rate": 4.75,
-          "combinedRate": 6.99,
-          "notes": "State base rate. Average combined rate: 6.99%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 7.1,
+          "notes": "State base rate. Average combined rate: 7.1%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "ND",
           "name": "North Dakota",
           "rate": 5.0,
-          "combinedRate": 6.97,
-          "notes": "State base rate. Average combined rate: 6.97%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 7.09,
+          "notes": "State base rate. Average combined rate: 7.09%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "OH",
           "name": "Ohio",
           "rate": 5.75,
-          "combinedRate": 7.24,
-          "notes": "State base rate. Average combined rate: 7.24%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 7.29,
+          "notes": "State base rate. Average combined rate: 7.29%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "OK",
           "name": "Oklahoma",
           "rate": 4.5,
-          "combinedRate": 8.99,
-          "notes": "State base rate. Average combined rate: 8.99%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 9.06,
+          "notes": "State base rate. Average combined rate: 9.06%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "OR",
@@ -6131,7 +6131,7 @@
           "rate": 0.0,
           "combinedRate": 0.0,
           "notes": "State base rate. Average combined rate: 0%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "PA",
@@ -6139,7 +6139,7 @@
           "rate": 6.0,
           "combinedRate": 6.34,
           "notes": "State base rate. Average combined rate: 6.34%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "RI",
@@ -6147,31 +6147,31 @@
           "rate": 7.0,
           "combinedRate": 7.0,
           "notes": "State base rate. Average combined rate: 7%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "SC",
           "name": "South Carolina",
           "rate": 6.0,
-          "combinedRate": 7.5,
-          "notes": "State base rate. Average combined rate: 7.5%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 7.49,
+          "notes": "State base rate. Average combined rate: 7.49%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "SD",
           "name": "South Dakota",
           "rate": 4.2,
-          "combinedRate": 6.4,
-          "notes": "State base rate. Average combined rate: 6.4%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 6.11,
+          "notes": "State base rate. Average combined rate: 6.11%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "TN",
           "name": "Tennessee",
           "rate": 7.0,
-          "combinedRate": 9.55,
-          "notes": "State base rate. Average combined rate: 9.55%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 9.61,
+          "notes": "State base rate. Average combined rate: 9.61%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "TX",
@@ -6179,23 +6179,23 @@
           "rate": 6.25,
           "combinedRate": 8.2,
           "notes": "State base rate. Average combined rate: 8.2%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "UT",
           "name": "Utah",
           "rate": 6.1,
-          "combinedRate": 7.2,
-          "notes": "State base rate. Average combined rate: 7.2%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 7.42,
+          "notes": "State base rate. Average combined rate: 7.42%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "VT",
           "name": "Vermont",
           "rate": 6.0,
-          "combinedRate": 6.36,
-          "notes": "State base rate. Average combined rate: 6.36%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 6.43,
+          "notes": "State base rate. Average combined rate: 6.43%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "VA",
@@ -6203,47 +6203,47 @@
           "rate": 5.3,
           "combinedRate": 5.77,
           "notes": "State base rate. Average combined rate: 5.77%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "WA",
           "name": "Washington",
           "rate": 6.5,
-          "combinedRate": 9.38,
-          "notes": "State base rate. Average combined rate: 9.38%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 9.57,
+          "notes": "State base rate. Average combined rate: 9.57%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "WV",
           "name": "West Virginia",
           "rate": 6.0,
-          "combinedRate": 6.55,
-          "notes": "State base rate. Average combined rate: 6.55%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 6.6,
+          "notes": "State base rate. Average combined rate: 6.6%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "WI",
           "name": "Wisconsin",
           "rate": 5.0,
-          "combinedRate": 5.43,
-          "notes": "State base rate. Average combined rate: 5.43%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 5.72,
+          "notes": "State base rate. Average combined rate: 5.72%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         },
         {
           "code": "WY",
           "name": "Wyoming",
           "rate": 4.0,
-          "combinedRate": 5.44,
-          "notes": "State base rate. Average combined rate: 5.44%.",
-          "sourceURL": "https://receiptedit.com/api/sales-tax"
+          "combinedRate": 5.39,
+          "notes": "State base rate. Average combined rate: 5.39%.",
+          "sourceURL": "https://dollarcalcs.com/developers"
         }
       ],
       "defaultRegionCode": "CA",
       "regionLabel": "State",
-      "effectiveFrom": "2026-06-17",
-      "lastVerified": "2026-06-17",
-      "sourceName": "ReceiptEdit state rates",
-      "sourceURL": "https://receiptedit.com/api/sales-tax"
+      "effectiveFrom": "2026-07-01",
+      "lastVerified": "2026-07-01",
+      "sourceName": "DollarCalcs state rates",
+      "sourceURL": "https://dollarcalcs.com/developers"
     },
     {
       "name": "Uruguay",
