@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T17:21:41Z",
+  "generatedAt": "2026-11-28T16:04:31Z",
   "sources": [
     {
       "name": "VATEstimator",
       "url": "https://vatestimator.com/vat-rates",
       "license": "free to use with attribution",
-      "updatedAt": "2026-11-07"
+      "updatedAt": "2026-11-27"
     },
     {
       "name": "DollarCalcs",
@@ -1301,11 +1301,12 @@
       "currencySymbol": "€",
       "standardRate": 19.0,
       "reducedRates": [
+        3.0,
         5.0,
         9.0
       ],
       "zeroRate": false,
-      "notes": "Reduced: 5% / 9%",
+      "notes": "Reduced: 3% / 5% / 9%",
       "taxType": "VAT",
       "rateDetails": [
         {
@@ -1323,6 +1324,12 @@
         {
           "label": "Reduced",
           "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Super-reduced",
+          "rate": 3.0,
           "taxType": "VAT",
           "role": "additional"
         }
@@ -3401,10 +3408,11 @@
       "standardRate": 18.0,
       "reducedRates": [
         5.0,
-        7.0
+        7.0,
+        12.0
       ],
-      "zeroRate": false,
-      "notes": "Reduced: 5% / 7%",
+      "zeroRate": true,
+      "notes": "Reduced: 5% / 7% / 12% • Zero: 0%",
       "taxType": "VAT",
       "rateDetails": [
         {
@@ -3422,6 +3430,18 @@
         {
           "label": "Reduced",
           "rate": 5.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Reduced",
+          "rate": 12.0,
+          "taxType": "VAT",
+          "role": "additional"
+        },
+        {
+          "label": "Zero-rated",
+          "rate": 0.0,
           "taxType": "VAT",
           "role": "additional"
         }
